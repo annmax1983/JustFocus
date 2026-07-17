@@ -4,7 +4,7 @@ English | [中文](languages/README_zh.md) | [日本語](languages/README_ja.md)
 
 A lightweight browser extension that blocks distracting websites to help you stay focused. Minimal, fast, and privacy-first.
 
-> Chromium-based · Manifest V3 · Minimal Permissions · Fully Local · Zero Tracking
+> Chromium-based · Manifest V3 · Minimal Permissions · Local Only · No Tracking
 
 ---
 
@@ -15,7 +15,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | Advantage | Detail |
 |-----------|--------|
 | 🎯 **Single Purpose** | Block distracting sites. That's it. No bloat. |
-| 🔒 **Zero Tracking** | No analytics, no accounts, no data collection whatsoever |
+| 🔒 **No Tracking** | No analytics, no accounts, no data collection whatsoever |
 | ⚡ **Lightweight** | Under 50KB total. No frameworks, no dependencies. |
 | 🕐 **Temp Bypass** | Need 5 minutes? Bypass a site temporarily without removing it |
 | 🔄 **Global Toggle** | Pause all blocking with one switch — lunch break, weekends |
