@@ -58,7 +58,7 @@
 - **declarativeNetRequest** — 使用声明式规则屏蔽网站，不读取页面内容
 - **storage** — 本地保存屏蔽列表，不上传数据
 - **alarms** — 管理临时解锁定时器，无后台追踪
-- 无 `<all_urls>` 主机权限，无追踪，无分析，无外部连接
+- 使用 `<all_urls>` 主机权限仅用于 declarativeNetRequest 屏蔽规则，无追踪，无分析，无外部连接
 
 ---
 

@@ -98,7 +98,7 @@ Output: `dist/` folder + `just-focus-v1.0.0.zip` ready for Chrome Web Store uplo
 - **storage** — Saves your blocklist locally. No data uploaded.
 - **alarms** — Manages temp bypass timers. No background tracking.
 - **activeTab** — Only accesses the current tab when you interact with the extension.
-- No `<all_urls>` host permission. No tracking. No analytics. No external connections.
+- Uses `<all_urls>` host permission only for declarativeNetRequest blocking rules. No tracking. No analytics. No external connections.
 
 **[📄 Full Privacy Policy](privacy-policy.html)**
 
