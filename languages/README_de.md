@@ -3,7 +3,7 @@
 
 Eine leichtgewichtige Browser-Erweiterung, die ablenkende Websites blockiert. Minimal, schnell und datenschutzfreundlich.
 
-> Chromium-basiert · Manifest V3 · Minimale Berechtigungen · Vollständig lokal · Kein Tracking
+> Chromium-basiert · Manifest V3 · Minimale Berechtigungen · Lokal zuerst · Kein Tracking
 
 ---
 
@@ -15,6 +15,24 @@ Eine leichtgewichtige Browser-Erweiterung, die ablenkende Websites blockiert. Mi
 | 🔄 **Globaler Schalter** | Alle Blockierungen ein-/ausschalten |
 | ⏱️ **5-Minuten-Bypass** | Temporärer Zugriff, automatische Re-Blockierung |
 | 💾 **Synchronisation** | Blockliste wird zwischen Chrome-Geräten synchronisiert |
+| 📋 **Vollständige Liste** | Alle gesperrten Sites verwalten, Dauer bearbeiten, Export & Import |
+| ⭐ **Premium** | Unbegrenzte Sites + Export/Import (einmalige VKT-Premium-Lizenz) |
+
+---
+
+## Kostenlos vs. Premium
+
+| Tarif | Blockierte Websites | Export / Import |
+|-------|---------------------|-----------------|
+| **Kostenlos** | Bis zu 10 aktive Websites | — |
+| **⭐ Premium** | Unbegrenzt | ✅ Inklusive |
+
+JustFocus ist kostenlos für bis zu **10 aktive blockierte Websites**. Für unbegrenzte Websites plus **Export / Import** Ihrer Sperrliste aktivieren Sie eine **VKT Premium**-Lizenz — einmaliger Kauf zur Unterstützung der Entwicklung.
+
+- 🛒 Lizenz erwerben: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
+- ⚙ Aktivieren: JustFocus-Popup öffnen → **⚙ / 🔒**-Schaltfläche → Lizenzschlüssel eingeben.
+
+> Die Lizenzaktivierung ist **optional**. Die kostenlose Version funktioniert ohne Konto, Registrierung oder Lizenzschlüssel.
 
 ---
 
@@ -30,7 +48,9 @@ Eine leichtgewichtige Browser-Erweiterung, die ablenkende Websites blockiert. Mi
 
 ## Datenschutz
 
-- Kein Tracking, keine Analytik, keine externen Verbindungen
+- Kein Tracking, keine Analytik. Die kostenlose Version läuft vollständig lokal
+- **Lizenz (optional)** — Nur wenn Sie eine kostenpflichtige Lizenz aktivieren, wird ein Geräte-Fingerprint + Browser-Metadaten an `api.annmax1983.com` gesendet, um die Lizenz zu aktivieren/zu validieren. Nie mit Ihrer Sperrliste, Ihrem Verlauf oder persönlichen Daten.
+- Die Daten von Gratisnutzern verlassen niemals das Gerät.
 
 ---
 
