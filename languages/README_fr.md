@@ -54,6 +54,13 @@ JustFocus est gratuit pour jusqu'à **10 sites actifs bloqués**. Pour des sites
 
 ---
 
+---
+
+## Avis sur le code source
+
+> ⚠️ **Ce dépôt ne publie pas le code source.** Il contient uniquement la documentation d'utilisation, les notes de mise à jour et les ressources d'assistance. L'extension est distribuée exclusivement via le Chrome Web Store. Aucun package d'installation hors ligne ni code source pour les utilisateurs finaux n'est fourni.
+
+
 ## Licence
 
 Copyright © 2026 JustFocus. Tous droits réservés.

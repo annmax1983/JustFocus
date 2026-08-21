@@ -54,6 +54,13 @@ JustFocus es gratis para hasta **10 sitios activos bloqueados**. Para sitios ili
 
 ---
 
+---
+
+## Aviso de código fuente
+
+> ⚠️ **Este repositorio no publica el código fuente.** Contiene únicamente documentación de uso, notas de versión y recursos de soporte. La extensión se distribuye exclusivamente a través de Chrome Web Store. No se proporcionan paquetes de instalación sin conexión ni código fuente para usuarios finales.
+
+
 ## Licencia
 
 Copyright © 2026 JustFocus. Todos los derechos reservados.
