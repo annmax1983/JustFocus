@@ -27,7 +27,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 
 | Feature | Description |
 |---------|-------------|
-| 🚫 **Custom Blocklist** | Add any domain to block — supports exact and wildcard matching |
+| 🚫 **Custom Blocklist** | Add any domain — all its subdomains are blocked automatically |
 | 🔄 **Global On/Off** | Toggle all blocking on or off instantly |
 | ⏱️ **5-Min Bypass** | Temporarily access a blocked site for 5 minutes, auto-reblocks |
 | 💾 **Sync Storage** | Blocklist syncs across your Chrome devices |
