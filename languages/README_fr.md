@@ -34,6 +34,7 @@ La plupart des bloqueurs de sites sont gonflés de publicités, d'inscriptions o
 | 🛡️ **Natif MV3** | Utilise `declarativeNetRequest` — aucune API obsolète, compatible avec la boutique |
 | 🌐 **Langue automatique** | Détecte la langue du navigateur, anglais par défaut |
 | 📋 **Page de liste complète** | Gérez chaque site bloqué, modifiez les durées, exportez et importez |
+| 🔑 **Protection par mot de passe** | Mot de passe local optionnel : débloquer, supprimer des sites et désactiver le blocage le nécessitent. Un mot de passe oublié est irrécupérable |
 | ⭐ **Premium** | Sites illimités + Export/Import avec une licence VKT Premium unique |
 
 ---
@@ -108,12 +109,28 @@ Résultat : dossier `dist/` + `just-focus-v1.0.0.zip` prêt pour l'upload sur le
 - Tous les sites sont débloqués instantanément
 - Rebasculez sur ON pour réactiver
 
+### Protection par mot de passe (optionnelle)
+
+Vous ne faites pas confiance à votre propre bouton de contournement ? Définissez un mot de passe :
+
+1. Ouvrez le popup → **⚙ / 🔒** → section *Protection par mot de passe*, ou le bouton 🔒 sur la page de liste
+2. Définissez un mot de passe (min. 4 caractères) — il est stocké **uniquement sur cet appareil** sous forme de hachage salé, jamais envoyé
+3. Ensuite, ces actions nécessitent le mot de passe :
+   - Désactiver le blocage (interrupteur global)
+   - Contournement 5 min sur la page de blocage
+   - Supprimer un site ou vider la liste
+   - Modifier une durée de blocage
+4. Changez ou supprimez le mot de passe à tout moment (le mot de passe actuel est requis)
+
+> ⚠️ **Un mot de passe oublié est irrécupérable.** Pas de lien de réinitialisation, pas de récupération, pas de porte dérobée — c'est voulu. Choisissez quelque chose dont vous vous souviendrez.
+
 ---
 
 ## Confidentialité
 
 - **declarativeNetRequest** — Bloque les sites via des règles déclaratives. Ne lit pas le contenu des pages.
 - **storage** — Sauvegarde votre liste de blocage en local. Aucune donnée envoyée.
+- **Mot de passe (optionnel)** — Si défini, seul un hachage salé est stocké localement. Aucune synchronisation, aucun envoi. Un mot de passe oublié est irrécupérable.
 - **alarms** — Gère les minuteurs de contournement temporaire. Aucun suivi en arrière-plan.
 - **activeTab** — N'accède à l'onglet actif que lorsque vous interagissez avec l'extension.
 - **Licence (optionnelle)** — Uniquement si vous activez une licence payante : une empreinte de l'appareil + des métadonnées du navigateur sont envoyées à `api.annmax1983.com` pour activer/valider la licence. Cela n'inclut jamais votre liste de blocage, votre historique de navigation ni vos données personnelles.

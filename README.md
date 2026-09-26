@@ -18,6 +18,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | 🔒 **No Tracking** | No analytics, no accounts. Free tier is fully local — data never leaves your device |
 | ⚡ **Lightweight** | Tiny footprint, no frameworks, no dependencies. |
 | 🕐 **Temp Bypass** | Need 5 minutes? Bypass a site temporarily without removing it |
+| 🔑 **Optional Password Lock** | Require a password to unblock — no more impulse visits |
 | 🔄 **Global Toggle** | Pause all blocking with one switch — lunch break, weekends |
 | 🌍 **6 Languages** | English, Chinese, Japanese, German, Spanish, French |
 
@@ -34,6 +35,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | 🛡️ **MV3 Native** | Uses declarativeNetRequest — no legacy APIs, store-friendly |
 | 🌐 **Auto Language** | Detects browser language, defaults to English |
 | 📋 **Full List Page** | Manage every blocked site, edit durations, export & import |
+| 🔑 **Password Protection** | Optional local password: unblocking, removing sites, and disabling blocking require it. Forgotten passwords cannot be recovered |
 | ⭐ **Premium** | Unlimited sites + Export/Import with a one-time VKT Premium license |
 
 ---
@@ -108,12 +110,28 @@ Output: `dist/` folder + `just-focus-v1.0.0.zip` ready for Chrome Web Store uplo
 - All sites are unblocked instantly
 - Toggle back ON to re-enable
 
+### Password Protection (Optional)
+
+Don't trust yourself with the bypass button? Set a password:
+
+1. Open the popup → click **⚙ / 🔒** → *Password Protection* section, or the 🔒 button on the list page
+2. Set a password (min. 4 characters) — it is stored **only on this device** as a salted hash, never uploaded
+3. From then on, these actions require the password:
+   - Turning blocking off (global switch)
+   - 5-minute bypass on the block page
+   - Removing a site or clearing the list
+   - Editing a block duration
+4. Change or remove the password anytime (the current password is required)
+
+> ⚠️ **Forgotten passwords cannot be recovered.** There is no reset link, no recovery, no backdoor — by design. Choose something you will actually remember.
+
 ---
 
 ## Privacy
 
 - **declarativeNetRequest** — Blocks sites using declarative rules. Does not read page content.
 - **storage** — Saves your blocklist locally. No data uploaded.
+- **Password (optional)** — If you set a password, only a salted hash is stored in local device storage. It never syncs and is never uploaded. Forgotten passwords cannot be recovered.
 - **alarms** — Manages temp bypass timers. No background tracking.
 - **activeTab** — Only accesses the current tab when you interact with the extension.
 - **License (optional)** — Only if you activate a paid license: a device fingerprint + browser metadata is sent to `api.annmax1983.com` to activate/validate the license. This never includes your blocklist, browsing history, or personal data.

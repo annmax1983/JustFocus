@@ -34,6 +34,7 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 | 🛡️ **Nativo MV3** | Usa declarativeNetRequest — sin APIs obsoletas, compatible con la tienda |
 | 🌐 **Idioma automático** | Detecta el idioma del navegador, por defecto inglés |
 | 📋 **Página de lista completa** | Gestiona cada sitio bloqueado, edita duraciones, exporta e importa |
+| 🔑 **Protección con contraseña** | Contraseña local opcional: desbloquear, eliminar sitios y desactivar el bloqueo la requieren. Las contraseñas olvidadas no se pueden recuperar |
 | ⭐ **Premium** | Sitios ilimitados + Exportar/Importar con una licencia VKT Premium de pago único |
 
 ---
@@ -108,12 +109,28 @@ Salida: carpeta `dist/` + `just-focus-v1.0.0.zip` listo para subir a Chrome Web 
 - Todos los sitios se desbloquean al instante
 - Vuelve a ON para reactivar
 
+### Protección con contraseña (opcional)
+
+¿No te fías de tu propio botón de desvío? Establece una contraseña:
+
+1. Abre el popup → **⚙ / 🔒** → sección *Protección con contraseña*, o el botón 🔒 en la página de lista
+2. Establece una contraseña (mín. 4 caracteres) — se guarda **solo en este dispositivo** como hash con sal, nunca se sube
+3. A partir de entonces, estas acciones requieren la contraseña:
+   - Desactivar el bloqueo (interruptor global)
+   - Desvío de 5 minutos en la página de bloqueo
+   - Eliminar un sitio o vaciar la lista
+   - Editar la duración de un bloqueo
+4. Cambia o elimina la contraseña cuando quieras (se requiere la actual)
+
+> ⚠️ **Las contraseñas olvidadas no se pueden recuperar.** Sin enlace de restablecimiento, sin recuperación, sin puerta trasera — es intencionado. Elige algo que puedas recordar.
+
 ---
 
 ## Privacidad
 
 - **declarativeNetRequest** — Bloquea sitios usando reglas declarativas. No lee contenido de páginas.
 - **storage** — Guarda tu lista negra localmente. Sin subida de datos.
+- **Contraseña (opcional)** — Si la estableces, solo se guarda un hash con sal en el almacenamiento local del dispositivo. Sin sincronización ni subida. Las contraseñas olvidadas no se pueden recuperar.
 - **alarms** — Gestiona temporizadores de desvío temporal. Sin rastreo en segundo plano.
 - **activeTab** — Solo accede a la pestaña actual cuando interactúas con la extensión.
 - **Licencia (opcional)** — Solo si activas una licencia de pago: una huella de dispositivo + metadatos del navegador se envían a `api.annmax1983.com` para activar/validar la licencia. Esto nunca incluye tu lista negra, historial de navegación ni datos personales.

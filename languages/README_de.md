@@ -34,6 +34,7 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 | 🛡️ **MV3 nativ** | Verwendet declarativeNetRequest — keine Legacy-APIs, Store-freundlich |
 | 🌐 **Auto-Sprache** | Erkennt Browsersprache, Standard ist Englisch |
 | 📋 **Vollständige Listen-Seite** | Jede blockierte Seite verwalten, Dauern bearbeiten, Exportieren & Importieren |
+| 🔑 **Passwortschutz** | Optionales lokales Passwort: Entsperren, Seiten entfernen und Blockierung deaktivieren erfordern es. Vergessene Passwörter sind nicht wiederherstellbar |
 | ⭐ **Premium** | Unbegrenzte Seiten + Export/Import mit einer einmaligen VKT Premium-Lizenz |
 
 ---
@@ -108,12 +109,28 @@ Output: `dist/`-Ordner + `just-focus-v1.0.0.zip` bereit für den Chrome Web Stor
 - Alle Seiten werden sofort entsperrt
 - Zurück auf EIN schalten, um erneut zu aktivieren
 
+### Passwortschutz (optional)
+
+Traust du dem Umgehungs-Button nicht? Setze ein Passwort:
+
+1. Popup öffnen → **⚙ / 🔒** → Abschnitt *Passwortschutz*, oder den 🔒-Button auf der Listen-Seite
+2. Passwort festlegen (min. 4 Zeichen) — es wird nur als gesalzener Hash **auf diesem Gerät** gespeichert, nie hochgeladen
+3. Fortan erfordern diese Aktionen das Passwort:
+   - Blockierung ausschalten (globaler Schalter)
+   - 5-Min-Umgehung auf der Blockierseite
+   - Seite entfernen oder Liste leeren
+   - Blockierdauer bearbeiten
+4. Passwort jederzeit ändern oder entfernen (aktuelles Passwort erforderlich)
+
+> ⚠️ **Vergessene Passwörter können nicht wiederhergestellt werden.** Kein Reset-Link, keine Wiederherstellung, kein Backdoor — by Design. Wähle etwas, das du dir wirklich merkst.
+
 ---
 
 ## Datenschutz
 
 - **declarativeNetRequest** — Blockiert Seiten mit Hilfe von deklarativen Regeln. Liest keinen Seiteninhalt.
 - **storage** — Speichert deine Blockliste lokal. Keine Daten hochgeladen.
+- **Passwort (optional)** — Bei Aktivierung wird nur ein gesalzener Hash lokal gespeichert. Keine Synchronisation, kein Upload. Vergessene Passwörter sind nicht wiederherstellbar.
 - **alarms** — Verwaltet temporäre Umgehungs-Timer. Kein Hintergrund-Tracking.
 - **activeTab** — Greift nur auf den aktuellen Tab zu, wenn du mit der Erweiterung interagierst.
 - **Lizenz (optional)** — Nur bei Aktivierung einer kostenpflichtigen Lizenz: Ein Geräte-Fingerprint + Browser-Metadaten werden an `api.annmax1983.com` gesendet, um die Lizenz zu aktivieren/validieren. Dies enthält nie deine Blockliste, deinen Browserverlauf oder persönliche Daten.
