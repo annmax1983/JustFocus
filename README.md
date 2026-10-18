@@ -36,18 +36,41 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | 🌐 **Auto Language** | Detects browser language, defaults to English |
 | 📋 **Full List Page** | Manage every blocked site, edit durations, export & import |
 | 🔑 **Password Protection** | Optional local password: unblocking, removing sites, and disabling blocking require it. Forgotten passwords cannot be recovered |
-| ⭐ **Premium** | Unlimited sites + Export/Import with a one-time VKT Premium license |
+| ⭐ **Premium** | Surgical Blocking — hide Shorts / Reels / For You feeds while the rest of the site keeps working |
 
 ---
 
 ## Free vs Premium
 
-| Plan | Blocked sites | Export / Import |
-|------|---------------|-----------------|
-| **Free** | Up to 10 active sites | — |
-| **⭐ Premium** | Unlimited | ✅ Included |
+| Capability | Free | Premium |
+|------------|------|---------|
+| Blocked sites (whole-site blocking) | **Unlimited** | Unlimited |
+| Timed blocks (30 min → 24 h → permanent) | ✅ | ✅ |
+| Global on/off toggle | ✅ | ✅ |
+| 5-minute bypass | ✅ | ✅ |
+| Optional password lock | ✅ | ✅ |
+| Sync across Chrome devices | ✅ | ✅ |
+| Export / import blocklist | ✅ | ✅ |
+| Surgical Blocking — entry point | YouTube Shorts | All 12 sites |
 
-JustFocus is free for up to **10 active blocked sites**. For unlimited sites plus **Export / Import** of your blocklist, activate a **VKT Premium** license — a one-time purchase that supports development.
+**Everything except Surgical Blocking is free, with no site limit, no account and no sign-up.** Premium unlocks **Surgical Blocking** on the remaining sites.
+
+| Site | What gets hidden | Free / Premium |
+|------|------------------|----------------|
+| YouTube | Shorts shelf, Shorts nav, `/shorts/` URLs | **Free** |
+| Instagram | Reels tab and Reels feed | Premium |
+| TikTok | For You feed | Premium |
+| Facebook | Reels | Premium |
+| Reddit | r/popular | Premium |
+| Snapchat | Spotlight | Premium |
+| VK | Clips | Premium |
+| Pinterest | Home feed pins | Premium |
+| Threads | For You feed (keeps Following) | Premium |
+| LinkedIn | Home feed posts | Premium |
+| X / Twitter | For You timeline (keeps Following) | Premium |
+| Xiaohongshu | Explore feed | Premium |
+
+> YouTube Shorts blocking is free for everyone — it is the single most requested case. Everything else under Surgical Blocking needs a Premium license.
 
 - 🛒 Get a license: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
 - ⚙ Activate it: open the JustFocus popup → click the **⚙ / 🔒** button → enter your license key.
@@ -58,11 +81,18 @@ JustFocus is free for up to **10 active blocked sites**. For unlimited sites plu
 
 ## Supported Browsers
 
-| Browser | Status |
-|---------|--------|
-| Google Chrome | ✅ Fully supported |
-| Microsoft Edge | ✅ Fully supported |
-| Other Chromium-based browsers | ✅ Should work |
+| Platform | Browser | Status |
+|----------|---------|--------|
+| Desktop | Google Chrome | ✅ Fully supported |
+| Desktop | Microsoft Edge | ✅ Fully supported |
+| Desktop | Other Chromium-based browsers (Brave, Vivaldi, Opera, Chromium) | ✅ Should work |
+| Android | **Chrome for Android** | ❌ Not possible — Chrome for Android has no extension support at all |
+| Android | Microsoft Edge Canary | ⚠️ Experimental extension support, limited catalog, unstable |
+| Android | Chromium forks that load Chrome Web Store extensions (e.g. Quetta, Yandex) | ⚠️ Unofficial; should work but untested |
+| Android | Firefox for Android | ❌ Not available — JustFocus is built on Chromium MV3 (`declarativeNetRequest`) and is not published on AMO |
+| iOS | Any | ❌ Not possible — no browser on iOS supports extensions outside of Safari |
+
+> **Short version:** this is a desktop browser extension. Installing it on a phone is not supported — Chrome for Android does not accept extensions, and the workarounds (Edge Canary, third-party Chromium forks) are experimental and not something we can support. Blocking works on desktop Chrome and Edge.
 
 ---
 
@@ -85,7 +115,9 @@ npm install
 npm run build
 ```
 
-Output: `dist/` folder + `just-focus-v1.0.0.zip` ready for Chrome Web Store upload.
+Output: `dist/` folder + `publish/just-focus-v<version>.zip` ready for Chrome Web Store upload.
+
+> The build strips console noise, minifies the JS and refuses to ship anything from `images/` (store screenshots) — the zip is checked after it is built, not assumed to be clean.
 
 ---
 
@@ -134,41 +166,10 @@ Don't trust yourself with the bypass button? Set a password:
 - **Password (optional)** — If you set a password, only a salted hash is stored in local device storage. It never syncs and is never uploaded. Forgotten passwords cannot be recovered.
 - **alarms** — Manages temp bypass timers. No background tracking.
 - **activeTab** — Only accesses the current tab when you interact with the extension.
-- **License (optional)** — Only if you activate a paid license: a device fingerprint + browser metadata is sent to `api.annmax1983.com` to activate/validate the license. This never includes your blocklist, browsing history, or personal data.
+- **License (optional)** — Only if you activate a paid license: a random install identifier + browser metadata is sent to `api.annmax1983.com` to activate/validate the license. This never includes your blocklist, browsing history, or personal data.
 - Uses `<all_urls>` host permission only for declarativeNetRequest blocking rules, and the license server only for paid activation. No tracking. No analytics. Free users' data never leaves the device.
 
 **[📄 Full Privacy Policy](privacy-policy.html)**
-
----
-
-## Project Structure
-
-```
-just-focus/
-├── manifest.json          # MV3 manifest
-├── background.js          # Service worker (blocking logic)
-├── license.js             # License manager (activation & validation)
-├── blocked.html           # Block page with temp bypass
-├── popup/
-│   ├── popup.html         # Popup UI (summary + license modal)
-│   ├── popup.css          # Styles (dark mode support)
-│   └── popup.js           # Popup logic
-├── list/
-│   ├── list.html          # Full list manager page
-│   ├── list.css           # Styles
-│   └── list.js            # Full list + export/import logic
-├── icons/                 # Extension icons (on/off states)
-├── assets/                # Support icons
-├── images/                # Screenshots & promo images
-├── _locales/              # i18n (en/zh_CN/ja/de/es/fr)
-├── scripts/
-│   └── build.js           # Build script (minify + zip)
-├── languages/             # Multi-language READMEs
-├── privacy-policy.html    # Privacy policy (6-language auto-detect)
-├── support.html           # Support page
-├── promo.html             # 1400×560 promotional tile template
-└── store-listing.txt      # Chrome Web Store submission guide
-```
 
 ---
 
@@ -182,4 +183,4 @@ Copyright © 2026 JustFocus. All rights reserved.
 
 ---
 
-> **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
+> **Note:** the official installation channel is the Chrome Web Store. This repository carries the extension's own documentation and source for reference — it is not a distribution channel and no offline/unsigned package is published here.

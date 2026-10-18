@@ -35,18 +35,20 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 | 🌐 **Idioma automático** | Detecta el idioma del navegador, por defecto inglés |
 | 📋 **Página de lista completa** | Gestiona cada sitio bloqueado, edita duraciones, exporta e importa |
 | 🔑 **Protección con contraseña** | Contraseña local opcional: desbloquear, eliminar sitios y desactivar el bloqueo la requieren. Las contraseñas olvidadas no se pueden recuperar |
-| ⭐ **Premium** | Sitios ilimitados + Exportar/Importar con una licencia VKT Premium de pago único |
+| ⭐ **Premium** | Bloqueo quirúrgico — oculta solo Shorts, Reels y Para ti; el resto del sitio sigue funcionando (licencia VKT Premium de pago único) |
 
 ---
 
 ## Gratis vs Premium
 
-| Plan | Sitios bloqueados | Exportar / Importar |
-|------|---------------|-----------------|
-| **Gratis** | Hasta 10 sitios activos | — |
-| **⭐ Premium** | Ilimitados | ✅ Incluido |
+| Plan | Sitios bloqueados | Exportar / Importar | Bloqueo quirúrgico |
+|------|---------------|-----------------|--------------------|
+| **Gratis** | Ilimitados | Incluido | Solo YouTube Shorts |
+| **⭐ Premium** | Ilimitados | Incluido | Los 12 sitios compatibles |
 
-JustFocus es gratuito para hasta **10 sitios bloqueados activos**. Para sitios ilimitados más la función de **Exportar / Importar** tu lista negra, activa una licencia **VKT Premium** — una compra única que apoya el desarrollo.
+Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. **Premium añade el bloqueo quirúrgico** — oculta solo las partes adictivas (Shorts, Reels, Para ti) y el resto del sitio sigue funcionando — en YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK y Xiaohongshu.
+
+> Bloquear YouTube Shorts es gratis para todos, los demás sitios requieren una licencia Premium.
 
 - 🛒 Obtener licencia: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
 - ⚙ Activarla: abre el popup de JustFocus → haz clic en el botón **⚙ / 🔒** → introduce tu clave de licencia.
@@ -57,11 +59,18 @@ JustFocus es gratuito para hasta **10 sitios bloqueados activos**. Para sitios i
 
 ## Navegadores compatibles
 
-| Navegador | Estado |
-|---------|--------|
-| Google Chrome | ✅ Totalmente compatible |
-| Microsoft Edge | ✅ Totalmente compatible |
-| Otros navegadores basados en Chromium | ✅ Debería funcionar |
+| Plataforma | Navegador | Estado |
+|---------|--------|--------|
+| Escritorio | Google Chrome | ✅ Totalmente compatible |
+| Escritorio | Microsoft Edge | ✅ Totalmente compatible |
+| Escritorio | Otros navegadores basados en Chromium (Brave, Vivaldi, Opera, Chromium) | ✅ Debería funcionar |
+| Android | **Chrome para Android** | ❌ Imposible — Chrome para Android no admite extensiones en absoluto |
+| Android | Microsoft Edge Canary | ⚠️ Compatibilidad experimental, catálogo limitado, inestable |
+| Android | Forks de Chromium que cargan extensiones de Chrome Web Store (p. ej. Quetta, Yandex) | ⚠️ No oficial; debería funcionar, pero sin probar |
+| Android | Firefox para Android | ❌ No disponible — JustFocus está hecho con Chromium MV3 (`declarativeNetRequest`) y no se publica en AMO |
+| iOS | Cualquiera | ❌ Imposible — ningún navegador en iOS admite extensiones fuera de Safari |
+
+> **En resumen:** es una extensión de navegador de escritorio. Instalarla en el teléfono no está soportado — Chrome para Android no acepta extensiones y los rodeos (Edge Canary, forks de Chromium de terceros) son experimentales. El bloqueo funciona en Chrome y Edge de escritorio.
 
 ---
 
@@ -84,7 +93,7 @@ npm install
 npm run build
 ```
 
-Salida: carpeta `dist/` + `just-focus-v1.0.0.zip` listo para subir a Chrome Web Store.
+Salida: carpeta `dist/` + `just-focus-v<version>.zip` listo para subir a Chrome Web Store.
 
 ---
 
@@ -133,41 +142,10 @@ Salida: carpeta `dist/` + `just-focus-v1.0.0.zip` listo para subir a Chrome Web 
 - **Contraseña (opcional)** — Si la estableces, solo se guarda un hash con sal en el almacenamiento local del dispositivo. Sin sincronización ni subida. Las contraseñas olvidadas no se pueden recuperar.
 - **alarms** — Gestiona temporizadores de desvío temporal. Sin rastreo en segundo plano.
 - **activeTab** — Solo accede a la pestaña actual cuando interactúas con la extensión.
-- **Licencia (opcional)** — Solo si activas una licencia de pago: una huella de dispositivo + metadatos del navegador se envían a `api.annmax1983.com` para activar/validar la licencia. Esto nunca incluye tu lista negra, historial de navegación ni datos personales.
+- **Licencia (opcional)** — Solo si activas una licencia de pago: la clave de licencia y un identificador de instalación aleatorio + metadatos del navegador se envían a `api.annmax1983.com` para activar/validar la licencia. Esto nunca incluye tu lista negra, historial de navegación ni datos personales.
 - Usa el permiso de host `<all_urls>` solo para las reglas de bloqueo de declarativeNetRequest, y el servidor de licencias solo para la activación de pago. Sin rastreo. Sin analíticas. Los datos de usuarios gratuitos nunca salen del dispositivo.
 
 **[📄 Política de privacidad completa](privacy-policy.html)**
-
----
-
-## Estructura del proyecto
-
-```
-just-focus/
-├── manifest.json          # MV3 manifest
-├── background.js          # Service worker (lógica de bloqueo)
-├── license.js             # Gestor de licencias (activación y validación)
-├── blocked.html           # Página de bloqueo con desvío temporal
-├── popup/
-│   ├── popup.html         # Interfaz del popup (resumen + modal de licencia)
-│   ├── popup.css          # Estilos (soporte modo oscuro)
-│   └── popup.js           # Lógica del popup
-├── list/
-│   ├── list.html          # Página de gestión de lista completa
-│   ├── list.css           # Estilos
-│   └── list.js            # Lista completa + lógica de exportar/importar
-├── icons/                 # Iconos de la extensión (estados on/off)
-├── assets/                # Iconos de apoyo
-├── images/                # Capturas de pantalla e imágenes promocionales
-├── _locales/              # i18n (en/zh_CN/ja/de/es/fr)
-├── scripts/
-│   └── build.js           # Script de compilación (minificar + comprimir)
-├── languages/             # READMEs multi-idioma
-├── privacy-policy.html    # Política de privacidad (detección automática de 6 idiomas)
-├── support.html           # Página de soporte
-├── promo.html             # Plantilla de baldosa promocional 1400×560
-└── store-listing.txt      # Guía de envío a Chrome Web Store
-```
 
 ---
 

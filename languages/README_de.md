@@ -35,18 +35,20 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 | 🌐 **Auto-Sprache** | Erkennt Browsersprache, Standard ist Englisch |
 | 📋 **Vollständige Listen-Seite** | Jede blockierte Seite verwalten, Dauern bearbeiten, Exportieren & Importieren |
 | 🔑 **Passwortschutz** | Optionales lokales Passwort: Entsperren, Seiten entfernen und Blockierung deaktivieren erfordern es. Vergessene Passwörter sind nicht wiederherstellbar |
-| ⭐ **Premium** | Unbegrenzte Seiten + Export/Import mit einer einmaligen VKT Premium-Lizenz |
+| ⭐ **Premium** | Chirurgisches Blockieren — nur Shorts, Reels und For-You-Feeds ausblenden, der Rest der Seite bleibt nutzbar (einmalige VKT Premium-Lizenz) |
 
 ---
 
 ## Kostenlos vs. Premium
 
-| Plan | Blockierte Seiten | Export / Import |
-|------|-------------------|-----------------|
-| **Kostenlos** | Bis zu 10 aktive Seiten | — |
-| **⭐ Premium** | Unbegrenzt | ✅ Inklusive |
+| Plan | Blockierte Seiten | Export / Import | Chirurgisches Blockieren |
+|------|-------------------|-----------------|--------------------------|
+| **Kostenlos** | Unbegrenzt | Inklusive | Nur YouTube Shorts |
+| **⭐ Premium** | Unbegrenzt | Inklusive | Alle 12 unterstützten Seiten |
 
-JustFocus ist kostenlos für bis zu **10 aktive blockierte Seiten**. Für unbegrenzte Seiten plus **Export / Import** deiner Blockliste, aktiviere eine **VKT Premium** Lizenz — ein einmaliger Kauf, der die Entwicklung unterstützt.
+Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. **Premium schaltet chirurgisches Blockieren frei** — nur die süchtig machenden Teile ausblenden (Shorts, Reels, For-You-Feeds), der Rest der Seite bleibt nutzbar — auf YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK und Xiaohongshu.
+
+> Das Blockieren von YouTube Shorts ist für alle kostenlos, alle anderen Seiten erfordern eine Premium-Lizenz.
 
 - 🛒 Lizenz erhalten: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
 - ⚙ Aktivieren: JustFocus Popup öffnen → **⚙ / 🔒**-Button klicken → Lizenzschlüssel eingeben.
@@ -57,11 +59,18 @@ JustFocus ist kostenlos für bis zu **10 aktive blockierte Seiten**. Für unbegr
 
 ## Unterstützte Browser
 
-| Browser | Status |
-|---------|--------|
-| Google Chrome | ✅ Vollständig unterstützt |
-| Microsoft Edge | ✅ Vollständig unterstützt |
-| Andere Chromium-basierte Browser | ✅ Sollte funktionieren |
+| Plattform | Browser | Status |
+|---------|--------|--------|
+| Desktop | Google Chrome | ✅ Vollständig unterstützt |
+| Desktop | Microsoft Edge | ✅ Vollständig unterstützt |
+| Desktop | Andere Chromium-basierte Browser (Brave, Vivaldi, Opera, Chromium) | ✅ Sollte funktionieren |
+| Android | **Chrome für Android** | ❌ Nicht möglich — Chrome für Android unterstützt keinerlei Erweiterungen |
+| Android | Microsoft Edge Canary | ⚠️ Experimentelle Erweiterungsunterstützung, kleiner Katalog, instabil |
+| Android | Chromium-Forks, die Chrome-Web-Store-Erweiterungen laden (z. B. Quetta, Yandex) | ⚠️ Inoffiziell; sollte funktionieren, aber ungetestet |
+| Android | Firefox für Android | ❌ Nicht verfügbar — JustFocus basiert auf Chromium MV3 (`declarativeNetRequest`) und ist nicht auf AMO veröffentlicht |
+| iOS | Alle | ❌ Nicht möglich — kein Browser unter iOS unterstützt Erweiterungen außerhalb von Safari |
+
+> **Kurz gesagt:** Dies ist eine Desktop-Browser-Erweiterung. Die Installation auf einem Smartphone wird nicht unterstützt — Chrome für Android akzeptiert keine Erweiterungen, und die Workarounds (Edge Canary, Chromium-Forks Dritter) sind experimentell. Das Blockieren funktioniert unter Chrome und Edge für Desktop.
 
 ---
 
@@ -84,7 +93,7 @@ npm install
 npm run build
 ```
 
-Output: `dist/`-Ordner + `just-focus-v1.0.0.zip` bereit für den Chrome Web Store Upload.
+Output: `dist/`-Ordner + `just-focus-v<version>.zip` bereit für den Chrome Web Store Upload.
 
 ---
 
@@ -133,41 +142,10 @@ Traust du dem Umgehungs-Button nicht? Setze ein Passwort:
 - **Passwort (optional)** — Bei Aktivierung wird nur ein gesalzener Hash lokal gespeichert. Keine Synchronisation, kein Upload. Vergessene Passwörter sind nicht wiederherstellbar.
 - **alarms** — Verwaltet temporäre Umgehungs-Timer. Kein Hintergrund-Tracking.
 - **activeTab** — Greift nur auf den aktuellen Tab zu, wenn du mit der Erweiterung interagierst.
-- **Lizenz (optional)** — Nur bei Aktivierung einer kostenpflichtigen Lizenz: Ein Geräte-Fingerprint + Browser-Metadaten werden an `api.annmax1983.com` gesendet, um die Lizenz zu aktivieren/validieren. Dies enthält nie deine Blockliste, deinen Browserverlauf oder persönliche Daten.
+- **Lizenz (optional)** — Nur bei Aktivierung einer kostenpflichtigen Lizenz: Lizenzschlüssel und eine zufällige Installationskennung + Browser-Metadaten werden an `api.annmax1983.com` gesendet, um die Lizenz zu aktivieren/validieren. Dies enthält nie deine Blockliste, deinen Browserverlauf oder persönliche Daten.
 - Verwendet `<all_urls>` Host-Berechtigung nur für declarativeNetRequest-Blockierregeln, und den Lizenzserver nur für kostenpflichtige Aktivierung. Kein Tracking. Keine Analytik. Daten von kostenlosen Nutzern verlassen nie das Gerät.
 
 **[📄 Vollständige Datenschutzerklärung](privacy-policy.html)**
-
----
-
-## Projektstruktur
-
-```
-just-focus/
-├── manifest.json          # MV3 Manifest
-├── background.js          # Service Worker (Blockierlogik)
-├── license.js             # Lizenzmanager (Aktivierung & Validierung)
-├── blocked.html           # Blockierseite mit temporärer Umgehung
-├── popup/
-│   ├── popup.html         # Popup-UI (Zusammenfassung + Lizenzmodal)
-│   ├── popup.css          # Styles (Dark Mode Support)
-│   └── popup.js           # Popup-Logik
-├── list/
-│   ├── list.html          # Vollständige Listen-Manager-Seite
-│   ├── list.css           # Styles
-│   └── list.js            # Vollständige Liste + Export/Import-Logik
-├── icons/                 # Erweiterungs-Symbole (Ein/Aus-Zustände)
-├── assets/                # Support-Symbole
-├── images/                # Screenshots & Promo-Bilder
-├── _locales/              # i18n (en/zh_CN/ja/de/es/fr)
-├── scripts/
-│   └── build.js           # Build-Skript (Minifizieren + Zippen)
-├── languages/             # Mehrsprachige READMEs
-├── privacy-policy.html    # Datenschutzerklärung (6-Sprachen Auto-Erkennung)
-├── support.html           # Support-Seite
-├── promo.html             # 1400×560 Promo-Tile-Vorlage
-└── store-listing.txt      # Chrome Web Store Einreichungsleitfaden
-```
 
 ---
 
@@ -181,4 +159,4 @@ Copyright © 2026 JustFocus. Alle Rechte vorbehalten.
 
 ---
 
-> **Hinweis:** Dieses Repository dient ausschließlich der **Projektpräsentation**. Es enthält nicht den vollständigen Quellcode, das Manifest, Icons oder Build-Skripte. Der vollständige Quellcode wird hier **nicht** veröffentlicht.
+> **Hinweis:** Der offizielle Installationsweg ist der Chrome Web Store. Dieses Repository enthält die Dokumentation und den Quellcode der Erweiterung als Referenz — es ist kein Vertriebsweg, und es werden hier keine Offline- oder unsignierten Pakete veröffentlicht.
