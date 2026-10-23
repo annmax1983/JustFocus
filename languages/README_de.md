@@ -76,24 +76,12 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 
 ## Installation
 
-### Aus dem Quellcode (Entwicklermodus)
+| Store | Link |
+|---|---|
+| Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
+| Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
 
-1. Repository klonen oder herunterladen
-2. Öffne die Erweiterungsseite deines Browsers:
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-3. Aktiviere den **Entwicklermodus** (Schalter oben rechts)
-4. Klicke auf **Entpackte Erweiterung laden** und wähle den Ordner `just-focus`
-5. Klicke auf das 🎯 JustFocus-Symbol in deiner Toolbar zum Starten
-
-### Build (Minifiziert + Gezippt)
-
-```bash
-npm install
-npm run build
-```
-
-Output: `dist/`-Ordner + `just-focus-v<version>.zip` bereit für den Chrome Web Store Upload.
+> Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
 ---
 

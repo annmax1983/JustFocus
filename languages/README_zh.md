@@ -43,11 +43,12 @@
 
 ## 安装
 
-1. 克隆或下载本仓库
-2. 打开 `chrome://extensions/`
-3. 开启**开发者模式**
-4. 点击**加载已解压的扩展程序**，选择 `just-focus` 文件夹
-5. 点击工具栏中的 🎯 JustFocus 图标
+| 商店 | 链接 |
+|---|---|
+| Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
+| Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+
+> 请只通过上方官方商店安装，避免使用第三方下载站。
 
 ---
 

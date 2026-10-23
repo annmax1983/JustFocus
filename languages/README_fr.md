@@ -76,24 +76,12 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 
 ## Installation
 
-### Depuis les sources (mode développeur)
+| Store | Lien |
+|---|---|
+| Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
+| Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
 
-1. Clonez ou téléchargez ce dépôt
-2. Ouvrez la page des extensions de votre navigateur :
-   - **Chrome** : `chrome://extensions/`
-   - **Edge** : `edge://extensions/`
-3. Activez le **mode Développeur** (bouton en haut à droite)
-4. Cliquez sur **Charger le package décompressé** et sélectionnez le dossier `just-focus`
-5. Cliquez sur l'icône 🎯 JustFocus dans votre barre d'outils pour commencer
-
-### Build (Minifié + Zippé)
-
-```bash
-npm install
-npm run build
-```
-
-Résultat : dossier `dist/` + `just-focus-v<version>.zip` prêt pour l'upload sur le Chrome Web Store.
+> Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
 ---
 

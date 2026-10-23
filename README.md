@@ -98,26 +98,12 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 
 ## Installation
 
-### From Source (Developer Mode)
+| Store | Link |
+|---|---|
+| Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
+| Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
 
-1. Clone or download this repository
-2. Open your browser's extension page:
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-3. Enable **Developer mode** (top-right toggle)
-4. Click **Load unpacked** and select the `just-focus` folder
-5. Click the 🎯 JustFocus icon in your toolbar to start
-
-### Build (Minified + Zipped)
-
-```bash
-npm install
-npm run build
-```
-
-Output: `dist/` folder + `publish/just-focus-v<version>.zip` ready for Chrome Web Store upload.
-
-> The build strips console noise, minifies the JS and refuses to ship anything from `images/` (store screenshots) — the zip is checked after it is built, not assumed to be clean.
+> Install only from the official stores above — avoid third-party download sites.
 
 ---
 

@@ -76,24 +76,12 @@
 
 ## インストール
 
-### ソースから（開発者モード）
+| ストア | リンク |
+|---|---|
+| Chrome ウェブストア | [Chrome に追加](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
+| Microsoft Edge アドオン | [Edge に追加](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
 
-1. このリポジトリをクローンまたはダウンロードします
-2. ブラウザの拡張機能ページを開きます：
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-3. **デベロッパーモード**を有効にします（右上のトグル）
-4. **パッケージ化されていない拡張機能を読み込む**をクリックし、`just-focus`フォルダを選択します
-5. ツールバーの🎯 JustFocusアイコンをクリックして開始します
-
-### ビルド（圧縮＋ZIP）
-
-```bash
-npm install
-npm run build
-```
-
-出力：`dist/`フォルダ＋Chrome Web Storeアップロード対応の`just-focus-v<version>.zip`。
+> 上記の公式ストアからのみインストールしてください。第三者サイトの利用は避けてください。
 
 ---
 
