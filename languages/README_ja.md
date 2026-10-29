@@ -4,7 +4,7 @@
 
 集中力を維持するために、気が散るWebサイトをブロックする軽量ブラウザ拡張機能です。ミニマルで高速、プライバシーを重視しています。
 
-> Chromium系ブラウザ対応 · Manifest V3 · 最小限の権限 · ローカル優先 · トラッキングなし
+> Chrome / Edge / Firefox · Manifest V3 · 最小限の権限 · ローカル優先 · トラッキングなし
 
 ---
 
@@ -30,7 +30,7 @@
 | 🚫 **カスタムブロックリスト** | 任意のドメインを追加 — すべてのサブドメインが自動的にブロックされます |
 | 🔄 **グローバルON/OFF** | すべてのブロックを即座にON/OFF |
 | ⏱️ **5分バイパス** | ブロックされたサイトに5分間一時アクセス、自動的に再ブロック |
-| 💾 **同期ストレージ** | ブロックリストがChromeデバイス間で同期 |
+| 💾 **同期ストレージ** | ブロックリストが Chrome / Edge / Firefox 間で同期 |
 | 🛡️ **MV3ネイティブ** | declarativeNetRequestを使用 — レガシーAPI不使用、ストアフレンドリー |
 | 🌐 **自動言語検出** | ブラウザの言語を検出し、デフォルトは英語 |
 | 📋 **フルリストページ** | ブロックしたすべてのサイトを管理、期間の編集、エクスポート＆インポート |
@@ -70,7 +70,20 @@
 | Android | Firefox for Android | ❌ 不可 — JustFocus は Chromium MV3（`declarativeNetRequest`）で作られており、AMO では配布していません |
 | iOS | すべて | ❌ 不可 — Safari 以外の iOS ブラウザは拡張機能に対応していません |
 
-> **結論：** これはデスクトップ向けブラウザ拡張機能です。スマートフォンへのインストールはサポートしていません — Android版 Chrome は拡張機能を受け付けず、回避策（Edge Canary、サードパーティの Chromium フォーク）は実験的で、サポートできません。ブロック機能はデスクトップの Chrome / Edge で動作します。
+> **結論：** これはデスクトップ向けブラウザ拡張機能です。スマートフォンへのインストールはサポートしていません — Android版 Chrome は拡張機能を受け付けず、回避策（Edge Canary、サードパーティの Chromium フォーク）は実験的で、サポートできません。ブロック機能はデスクトップ版の Chrome / Edge / Firefox で動作します。
+
+---
+
+## 対応ブラウザ
+
+| ブラウザ | 状態 |
+|--------|------|
+| Google Chrome | ✅ 完全対応 |
+| Microsoft Edge | ✅ 完全対応 |
+| Mozilla Firefox | ✅ 完全対応 |
+| その他のChromium系ブラウザ | ✅ 動作するはずです |
+
+> **Firefox について：** Firefox for Android 版はまだ有効化されていません（manifest に `gecko_android` を宣言していないため）。AMO では現在デスクトップ版のみ提供しています。その他の機能は Chrome / Edge と同じです。
 
 ---
 
@@ -80,6 +93,7 @@
 |---|---|
 | Chrome ウェブストア | [Chrome に追加](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge アドオン | [Edge に追加](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Firefox アドオン（AMO） | 🔜 審査中 — 公開後にリンクを追加します |
 
 > 上記の公式ストアからのみインストールしてください。第三者サイトの利用は避けてください。
 

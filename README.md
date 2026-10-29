@@ -4,7 +4,7 @@ English | [中文](languages/README_zh.md) | [日本語](languages/README_ja.md)
 
 A lightweight browser extension that blocks distracting websites to help you stay focused. Minimal, fast, and privacy-first.
 
-> Chromium-based · Manifest V3 · Minimal Permissions · Local-First · No Tracking
+> Chrome · Edge · Firefox · Manifest V3 · Minimal Permissions · Local-First · No Tracking
 
 ---
 
@@ -31,7 +31,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | 🚫 **Custom Blocklist** | Add any domain — all its subdomains are blocked automatically |
 | 🔄 **Global On/Off** | Toggle all blocking on or off instantly |
 | ⏱️ **5-Min Bypass** | Temporarily access a blocked site for 5 minutes, auto-reblocks |
-| 💾 **Sync Storage** | Blocklist syncs across your Chrome devices |
+| 💾 **Sync Storage** | Blocklist syncs across devices signed in to the same browser account — Google / Microsoft account on Chrome and Edge, Firefox Sync on Firefox |
 | 🛡️ **MV3 Native** | Uses declarativeNetRequest — no legacy APIs, store-friendly |
 | 🌐 **Auto Language** | Detects browser language, defaults to English |
 | 📋 **Full List Page** | Manage every blocked site, edit durations, export & import |
@@ -49,7 +49,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | Global on/off toggle | ✅ | ✅ |
 | 5-minute bypass | ✅ | ✅ |
 | Optional password lock | ✅ | ✅ |
-| Sync across Chrome devices | ✅ | ✅ |
+| Sync across signed-in devices | ✅ | ✅ |
 | Export / import blocklist | ✅ | ✅ |
 | Surgical Blocking — entry point | YouTube Shorts | All 12 sites |
 
@@ -85,14 +85,15 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 |----------|---------|--------|
 | Desktop | Google Chrome | ✅ Fully supported |
 | Desktop | Microsoft Edge | ✅ Fully supported |
+| Desktop | Mozilla Firefox | ✅ Fully supported — Manifest V3, Firefox 142+ |
 | Desktop | Other Chromium-based browsers (Brave, Vivaldi, Opera, Chromium) | ✅ Should work |
 | Android | **Chrome for Android** | ❌ Not possible — Chrome for Android has no extension support at all |
 | Android | Microsoft Edge Canary | ⚠️ Experimental extension support, limited catalog, unstable |
 | Android | Chromium forks that load Chrome Web Store extensions (e.g. Quetta, Yandex) | ⚠️ Unofficial; should work but untested |
-| Android | Firefox for Android | ❌ Not available — JustFocus is built on Chromium MV3 (`declarativeNetRequest`) and is not published on AMO |
+| Android | Firefox for Android | ⚠️ Not enabled in the current AMO listing — the add-on targets Firefox desktop; Android support is not officially offered |
 | iOS | Any | ❌ Not possible — no browser on iOS supports extensions outside of Safari |
 
-> **Short version:** this is a desktop browser extension. Installing it on a phone is not supported — Chrome for Android does not accept extensions, and the workarounds (Edge Canary, third-party Chromium forks) are experimental and not something we can support. Blocking works on desktop Chrome and Edge.
+> **Short version:** this is a desktop browser extension. Blocking works on desktop Chrome, Edge and Firefox. Installing it on a phone is not supported — Chrome for Android does not accept extensions, and the workarounds (Edge Canary, third-party Chromium forks) are experimental and not something we can support.
 
 ---
 
@@ -102,6 +103,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -154,6 +156,7 @@ Don't trust yourself with the bypass button? Set a password:
 - **activeTab** — Only accesses the current tab when you interact with the extension.
 - **License (optional)** — Only if you activate a paid license: a random install identifier + browser metadata is sent to `api.annmax1983.com` to activate/validate the license. This never includes your blocklist, browsing history, or personal data.
 - Uses `<all_urls>` host permission only for declarativeNetRequest blocking rules, and the license server only for paid activation. No tracking. No analytics. Free users' data never leaves the device.
+- **Firefox** — the same permissions are declared (`declarativeNetRequest`, `storage`, `alarms`, `activeTab`, `<all_urls>`). Firefox lists them in *Add-ons Manager → Permissions*, where you can review them and revoke optional ones at any time. Blocking still runs on-device via `declarativeNetRequest`; no page content is read.
 
 **[📄 Full Privacy Policy](privacy-policy.html)**
 
@@ -169,4 +172,4 @@ Copyright © 2026 JustFocus. All rights reserved.
 
 ---
 
-> **Note:** the official installation channel is the Chrome Web Store. This repository carries the extension's own documentation and source for reference — it is not a distribution channel and no offline/unsigned package is published here.
+> **Note:** the official installation channels are the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (AMO). This repository carries the extension's own documentation and source for reference — it is not a distribution channel and no offline/unsigned package is published here.

@@ -3,7 +3,7 @@
 
 一款轻量级浏览器扩展，屏蔽干扰网站，帮助你保持专注。极简、快速、隐私优先。
 
-> 基于 Chromium · Manifest V3 · 最小权限 · 本地优先 · 无追踪
+> Chrome / Edge / Firefox · Manifest V3 · 最小权限 · 本地优先 · 无追踪
 
 ---
 
@@ -14,7 +14,7 @@
 | 🚫 **自定义屏蔽列表** | 添加任意域名，自动覆盖其所有子域名 |
 | 🔄 **全局开关** | 一键切换所有屏蔽的开/关状态 |
 | ⏱️ **5 分钟临时解锁** | 临时访问被屏蔽的网站，5 分钟后自动重新屏蔽 |
-| 💾 **同步存储** | 屏蔽列表在 Chrome 设备间同步 |
+| 💾 **同步存储** | 屏蔽列表在浏览器账号间同步（Chrome / Edge / Firefox） |
 | 🛡️ **MV3 原生** | 使用 declarativeNetRequest，无旧版 API |
 | 🌐 **自动语言** | 检测浏览器语言，默认英文 |
 | 📋 **完整列表页** | 管理所有屏蔽站点、修改时长、导出与导入 |
@@ -41,12 +41,26 @@
 
 ---
 
+## 支持的浏览器
+
+| 浏览器 | 状态 |
+|--------|------|
+| Google Chrome | ✅ 完全支持 |
+| Microsoft Edge | ✅ 完全支持 |
+| Mozilla Firefox | ✅ 完全支持 |
+| 其他 Chromium 内核浏览器 | ✅ 应该可用 |
+
+> **Firefox 说明：** Firefox for Android 版暂未启用（清单未声明 `gecko_android`），AMO 上目前只提供桌面版。其余功能与 Chrome / Edge 一致。
+
+---
+
 ## 安装
 
 | 商店 | 链接 |
 |---|---|
 | Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Firefox 附加组件（AMO） | 🔜 审核中，上架后补充链接 |
 
 > 请只通过上方官方商店安装，避免使用第三方下载站。
 
@@ -109,7 +123,7 @@
 
 ## 源码说明
 
-> 官方安装渠道只有 Chrome Web Store。本仓库收纳扩展自身的说明文档与源码，供查阅使用，不作为分发渠道，也不提供离线安装包或未签名包。
+> 官方安装渠道只有 Chrome Web Store、Microsoft Edge Add-ons 与 Firefox 附加组件（AMO）。本仓库收纳扩展自身的说明文档与源码，供查阅使用，不作为分发渠道，也不提供离线安装包或未签名包。
 
 ---
 

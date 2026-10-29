@@ -4,7 +4,7 @@
 
 Eine schlanke Browser-Erweiterung, die ablenkende Websites blockiert, damit du konzentriert bleibst. Minimalistisch, schnell und mit Fokus auf Datenschutz.
 
-> Chromium-basiert · Manifest V3 · Minimale Berechtigungen · Lokal zuerst · Kein Tracking
+> Chrome / Edge / Firefox · Manifest V3 · Minimale Berechtigungen · Lokal zuerst · Kein Tracking
 
 ---
 
@@ -30,7 +30,7 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 | 🚫 **Eigene Blockliste** | Beliebige Domain hinzufügen — alle ihre Subdomains werden automatisch blockiert |
 | 🔄 **Global EIN/AUS** | Gesamte Blockierung sofort ein- oder ausschalten |
 | ⏱️ **5-Min Umgehung** | Auf eine blockierte Seite für 5 Minuten zugreifen, wird automatisch wieder blockiert |
-| 💾 **Sync-Speicher** | Blockliste wird über deine Chrome-Geräte hinweg synchronisiert |
+| 💾 **Sync-Speicher** | Blockliste wird über deine Browserkonten (Chrome / Edge / Firefox) hinweg synchronisiert |
 | 🛡️ **MV3 nativ** | Verwendet declarativeNetRequest — keine Legacy-APIs, Store-freundlich |
 | 🌐 **Auto-Sprache** | Erkennt Browsersprache, Standard ist Englisch |
 | 📋 **Vollständige Listen-Seite** | Jede blockierte Seite verwalten, Dauern bearbeiten, Exportieren & Importieren |
@@ -70,7 +70,20 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 | Android | Firefox für Android | ❌ Nicht verfügbar — JustFocus basiert auf Chromium MV3 (`declarativeNetRequest`) und ist nicht auf AMO veröffentlicht |
 | iOS | Alle | ❌ Nicht möglich — kein Browser unter iOS unterstützt Erweiterungen außerhalb von Safari |
 
-> **Kurz gesagt:** Dies ist eine Desktop-Browser-Erweiterung. Die Installation auf einem Smartphone wird nicht unterstützt — Chrome für Android akzeptiert keine Erweiterungen, und die Workarounds (Edge Canary, Chromium-Forks Dritter) sind experimentell. Das Blockieren funktioniert unter Chrome und Edge für Desktop.
+> **Kurz gesagt:** Dies ist eine Desktop-Browser-Erweiterung. Die Installation auf einem Smartphone wird nicht unterstützt — Chrome für Android akzeptiert keine Erweiterungen, und die Workarounds (Edge Canary, Chromium-Forks Dritter) sind experimentell. Das Blockieren funktioniert in der Desktop-Version von Chrome, Edge und Firefox.
+
+---
+
+## Unterstützte Browser
+
+| Browser | Status |
+|--------|--------|
+| Google Chrome | ✅ Vollständig unterstützt |
+| Microsoft Edge | ✅ Vollständig unterstützt |
+| Mozilla Firefox | ✅ Vollständig unterstützt |
+| Andere Chromium-basierte Browser | ✅ Sollte funktionieren |
+
+> **Firefox-Hinweis:** Eine Firefox-for-Android-Version ist noch nicht aktiviert (kein `gecko_android` im Manifest); AMO bietet derzeit nur die Desktop-Version an. Die übrigen Funktionen verhalten sich wie unter Chrome / Edge.
 
 ---
 
@@ -80,6 +93,7 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 |---|---|
 | Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Firefox-Add-ons (AMO) | 🔜 In Prüfung – Link folgt nach der Freigabe |
 
 > Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
@@ -147,4 +161,4 @@ Copyright © 2026 JustFocus. Alle Rechte vorbehalten.
 
 ---
 
-> **Hinweis:** Der offizielle Installationsweg ist der Chrome Web Store. Dieses Repository enthält die Dokumentation und den Quellcode der Erweiterung als Referenz — es ist kein Vertriebsweg, und es werden hier keine Offline- oder unsignierten Pakete veröffentlicht.
+> **Hinweis:** Der offizielle Installationsweg ist der Chrome Web Store, Microsoft Edge Add-ons und Firefox-Add-ons (AMO). Dieses Repository enthält die Dokumentation und den Quellcode der Erweiterung als Referenz — es ist kein Vertriebsweg, und es werden hier keine Offline- oder unsignierten Pakete veröffentlicht.

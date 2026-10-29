@@ -4,7 +4,7 @@
 
 Una extensión ligera para el navegador que bloquea sitios web que distraen para ayudarte a mantenerte concentrado. Mínima, rápida y con la privacidad por delante.
 
-> Basada en Chromium · Manifest V3 · Permisos mínimos · Local primero · Sin rastreo
+> Chrome / Edge / Firefox · Manifest V3 · Permisos mínimos · Local primero · Sin rastreo
 
 ---
 
@@ -30,7 +30,7 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 | 🚫 **Lista negra personalizada** | Añade cualquier dominio — todos sus subdominios se bloquean automáticamente |
 | 🔄 **Interruptor global ON/OFF** | Activa o desactiva todo el bloqueo al instante |
 | ⏱️ **Desvío de 5 minutos** | Accede temporalmente a un sitio bloqueado durante 5 minutos, se vuelve a bloquear automáticamente |
-| 💾 **Almacenamiento sincronizado** | La lista negra se sincroniza entre tus dispositivos Chrome |
+| 💾 **Almacenamiento sincronizado** | La lista negra se sincroniza entre tus dispositivos (Chrome, Edge o Firefox) |
 | 🛡️ **Nativo MV3** | Usa declarativeNetRequest — sin APIs obsoletas, compatible con la tienda |
 | 🌐 **Idioma automático** | Detecta el idioma del navegador, por defecto inglés |
 | 📋 **Página de lista completa** | Gestiona cada sitio bloqueado, edita duraciones, exporta e importa |
@@ -70,7 +70,20 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 | Android | Firefox para Android | ❌ No disponible — JustFocus está hecho con Chromium MV3 (`declarativeNetRequest`) y no se publica en AMO |
 | iOS | Cualquiera | ❌ Imposible — ningún navegador en iOS admite extensiones fuera de Safari |
 
-> **En resumen:** es una extensión de navegador de escritorio. Instalarla en el teléfono no está soportado — Chrome para Android no acepta extensiones y los rodeos (Edge Canary, forks de Chromium de terceros) son experimentales. El bloqueo funciona en Chrome y Edge de escritorio.
+> **En resumen:** es una extensión de navegador de escritorio. Instalarla en el teléfono no está soportado — Chrome para Android no acepta extensiones y los rodeos (Edge Canary, forks de Chromium de terceros) son experimentales. El bloqueo funciona en Chrome, Edge y Firefox de escritorio.
+
+---
+
+## Navegadores compatibles
+
+| Navegador | Estado |
+|---------|--------|
+| Google Chrome | ✅ Totalmente compatible |
+| Microsoft Edge | ✅ Totalmente compatible |
+| Mozilla Firefox | ✅ Totalmente compatible |
+| Otros navegadores basados en Chromium | ✅ Debería funcionar |
+
+> **Nota sobre Firefox:** La versión para Firefox para Android aún no está habilitada (el manifiesto no declara `gecko_android`); AMO solo ofrece la versión de escritorio. El resto de funciones se comporta igual que en Chrome / Edge.
 
 ---
 
@@ -80,6 +93,7 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 |---|---|
 | Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Complementos de Firefox (AMO) | 🔜 En revisión: el enlace se añadirá al publicarse |
 
 > Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 

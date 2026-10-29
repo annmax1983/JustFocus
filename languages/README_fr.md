@@ -4,7 +4,7 @@
 
 Une extension légère qui bloque les sites web distrayants pour vous aider à rester concentré. Minimal, rapide et respectueux de votre vie privée.
 
-> Chromium · Manifest V3 · Permissions minimales · Local d'abord · Aucun suivi
+> Chrome / Edge / Firefox · Manifest V3 · Permissions minimales · Local d'abord · Aucun suivi
 
 ---
 
@@ -30,7 +30,7 @@ La plupart des bloqueurs de sites sont gonflés de publicités, d'inscriptions o
 | 🚫 **Liste de blocage personnalisée** | Ajoutez n'importe quel domaine — tous ses sous-domaines sont bloqués automatiquement |
 | 🔄 **Activation/Désactivation globale** | Activez ou désactivez tout le blocage instantanément |
 | ⏱️ **Contournement 5 min** | Accédez temporairement à un site bloqué pendant 5 minutes, rebloquage automatique |
-| 💾 **Synchronisation** | La liste de blocage se synchronise sur vos appareils Chrome |
+| 💾 **Synchronisation** | La liste de blocage se synchronise sur vos appareils (Chrome, Edge ou Firefox) |
 | 🛡️ **Natif MV3** | Utilise `declarativeNetRequest` — aucune API obsolète, compatible avec la boutique |
 | 🌐 **Langue automatique** | Détecte la langue du navigateur, anglais par défaut |
 | 📋 **Page de liste complète** | Gérez chaque site bloqué, modifiez les durées, exportez et importez |
@@ -70,7 +70,20 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 | Android | Firefox pour Android | ❌ Indisponible — JustFocus est bâti sur Chromium MV3 (`declarativeNetRequest`) et n'est pas publié sur AMO |
 | iOS | Tous | ❌ Impossible — aucun navigateur sur iOS ne prend en charge les extensions en dehors de Safari |
 
-> **En bref :** c'est une extension de navigateur de bureau. L'installation sur téléphone n'est pas prise en charge — Chrome pour Android n'accepte pas les extensions et les contournements (Edge Canary, forks Chromium tiers) sont expérimentaux. Le blocage fonctionne sur Chrome et Edge de bureau.
+> **En bref :** c'est une extension de navigateur de bureau. L'installation sur téléphone n'est pas prise en charge — Chrome pour Android n'accepte pas les extensions et les contournements (Edge Canary, forks Chromium tiers) sont expérimentaux. Le blocage fonctionne sur Chrome, Edge et Firefox de bureau.
+
+---
+
+## Navigateurs pris en charge
+
+| Navigateur | Statut |
+|---------|--------|
+| Google Chrome | ✅ Entièrement pris en charge |
+| Microsoft Edge | ✅ Entièrement pris en charge |
+| Mozilla Firefox | ✅ Entièrement pris en charge |
+| Autres navigateurs basés sur Chromium | ✅ Devrait fonctionner |
+
+> **Note Firefox :** La version Firefox pour Android n’est pas encore activée (le manifeste ne déclare pas `gecko_android`) : AMO ne propose pour l’instant que la version bureau. Le reste des fonctions se comporte comme sous Chrome / Edge.
 
 ---
 
@@ -80,6 +93,7 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 |---|---|
 | Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
+| Modules complémentaires Firefox (AMO) | 🔜 En cours d’examen — le lien sera ajouté après publication |
 
 > Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
@@ -147,4 +161,4 @@ Copyright © 2026 JustFocus. Tous droits réservés.
 
 ---
 
-> **Note :** le canal d'installation officiel est le Chrome Web Store. Ce dépôt contient la documentation et le code source de l'extension à titre de référence — ce n'est pas un canal de distribution, et aucun paquet hors ligne ou non signé n'y est publié.
+> **Note :** le canal d'installation officiel est le Chrome Web Store, Microsoft Edge Add-ons et Firefox Add-ons (AMO). Ce dépôt contient la documentation et le code source de l'extension à titre de référence — ce n'est pas un canal de distribution, et aucun paquet hors ligne ou non signé n'y est publié.
