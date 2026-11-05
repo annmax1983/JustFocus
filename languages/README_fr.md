@@ -15,7 +15,7 @@ La plupart des bloqueurs de sites sont gonflés de publicités, d'inscriptions o
 | Avantage | Détail |
 |-----------|--------|
 | 🎯 **Objectif unique** | Bloquer les sites distrayants. C'est tout. Pas de superflu. |
-| 🔒 **Pas de suivi** | Pas d'analytics, pas de comptes. Le niveau gratuit est entièrement local — vos données ne quittent jamais votre appareil |
+| 🔒 **Pas de suivi** | Pas d'analytics, pas de comptes. Le niveau gratuit ne contacte aucun serveur JustFocus — vos réglages restent dans le navigateur (synchronisation facultative) |
 | ⚡ **Léger** | Empreinte minuscule, pas de frameworks, pas de dépendances |
 | 🕐 **Contournement temporaire** | Besoin de 5 minutes ? Contournez un site temporairement sans le retirer |
 | 🔄 **Activation globale** | Mettez en pause tout le blocage avec un seul interrupteur — pause déjeuner, week-end |
@@ -50,7 +50,7 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 
 > Le blocage de YouTube Shorts est gratuit pour tous, les autres sites nécessitent une licence Premium.
 
-- 🛒 Obtenir une licence : `https://www.annmax1983.com/checkout.html?plugin=justfocus`
+- 🛒 Obtenir une licence : `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ L'activer : ouvrez le popup JustFocus → cliquez sur le bouton **⚙ / 🔒** → saisissez votre clé de licence.
 
 > L'activation de la licence est **optionnelle**. Le niveau gratuit fonctionne entièrement sans elle — pas de compte, pas d'inscription, pas de clé de licence requise.
@@ -67,7 +67,7 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 | Android | **Chrome pour Android** | ❌ Impossible — Chrome pour Android ne prend en charge aucune extension |
 | Android | Microsoft Edge Canary | ⚠️ Prise en charge expérimentale, catalogue limité, instable |
 | Android | Forks Chromium qui chargent les extensions du Chrome Web Store (ex. Quetta, Yandex) | ⚠️ Non officiel ; devrait fonctionner mais non testé |
-| Android | Firefox pour Android | ❌ Indisponible — JustFocus est bâti sur Chromium MV3 (`declarativeNetRequest`) et n'est pas publié sur AMO |
+| Android | Firefox pour Android | ❌ Indisponible — la version Firefox cible uniquement Firefox pour ordinateur (fiche AMO) ; aucun build Android n’est publié |
 | iOS | Tous | ❌ Impossible — aucun navigateur sur iOS ne prend en charge les extensions en dehors de Safari |
 
 > **En bref :** c'est une extension de navigateur de bureau. L'installation sur téléphone n'est pas prise en charge — Chrome pour Android n'accepte pas les extensions et les contournements (Edge Canary, forks Chromium tiers) sont expérimentaux. Le blocage fonctionne sur Chrome, Edge et Firefox de bureau.
@@ -93,7 +93,7 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 |---|---|
 | Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
-| Modules complémentaires Firefox (AMO) | 🔜 En cours d’examen — le lien sera ajouté après publication |
+| Modules complémentaires Firefox (AMO) | [Installer pour Firefox](https://addons.mozilla.org/firefox/addon/justfocus/) |
 
 > Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
@@ -125,7 +125,7 @@ Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**
 Vous ne faites pas confiance à votre propre bouton de contournement ? Définissez un mot de passe :
 
 1. Ouvrez le popup → **⚙ / 🔒** → section *Protection par mot de passe*, ou le bouton 🔒 sur la page de liste
-2. Définissez un mot de passe (min. 4 caractères) — il est stocké **uniquement sur cet appareil** sous forme de hachage salé, jamais envoyé
+2. Définissez un mot de passe (min. 4 caractères) — seul un hachage salé est stocké, jamais le mot de passe lui-même. Comme vos autres réglages, il réside dans le stockage de Chrome et suit la synchronisation du navigateur si elle est active, mais il n'est jamais envoyé aux serveurs de JustFocus
 3. Ensuite, ces actions nécessitent le mot de passe :
    - Désactiver le blocage (interrupteur global)
    - Contournement 5 min sur la page de blocage
@@ -141,11 +141,11 @@ Vous ne faites pas confiance à votre propre bouton de contournement ? Définiss
 
 - **declarativeNetRequest** — Bloque les sites via des règles déclaratives. Ne lit pas le contenu des pages.
 - **storage** — Sauvegarde votre liste de blocage en local. Aucune donnée envoyée.
-- **Mot de passe (optionnel)** — Si défini, seul un hachage salé est stocké localement. Aucune synchronisation, aucun envoi. Un mot de passe oublié est irrécupérable.
+- **Mot de passe (optionnel)** — Si défini, seul un hachage salé est stocké, jamais en clair. Comme vos autres réglages, il réside dans le stockage de Chrome : la synchronisation du navigateur peut le copier entre vos appareils, mais il n'est jamais envoyé aux serveurs de JustFocus. Un mot de passe oublié est irrécupérable.
 - **alarms** — Gère les minuteurs de contournement temporaire. Aucun suivi en arrière-plan.
 - **activeTab** — N'accède à l'onglet actif que lorsque vous interagissez avec l'extension.
 - **Licence (optionnelle)** — Uniquement si vous activez une licence payante : la clé de licence et un identifiant d'installation aléatoire + des métadonnées du navigateur sont envoyées à `api.annmax1983.com` pour activer/valider la licence. Cela n'inclut jamais votre liste de blocage, votre historique de navigation ni vos données personnelles.
-- Utilise la permission `<all_urls>` uniquement pour les règles de blocage `declarativeNetRequest`, et le serveur de licence uniquement pour l'activation payante. Aucun suivi. Aucun analytics. Les données des utilisateurs gratuits ne quittent jamais l'appareil.
+- Utilise la permission `<all_urls>` uniquement pour les règles de blocage `declarativeNetRequest`, et le serveur de licence uniquement pour l'activation payante. Aucun suivi. Aucun analytics. Les fonctions gratuites ne contactent aucun serveur JustFocus : vos réglages restent dans le stockage du navigateur et seul le compte de synchronisation de votre navigateur les copie si vous l'activez.
 
 **[📄 Politique de confidentialité complète](privacy-policy.html)**
 
@@ -162,3 +162,13 @@ Copyright © 2026 JustFocus. Tous droits réservés.
 ---
 
 > **Note :** le canal d'installation officiel est le Chrome Web Store, Microsoft Edge Add-ons et Firefox Add-ons (AMO). Ce dépôt contient la documentation et le code source de l'extension à titre de référence — ce n'est pas un canal de distribution, et aucun paquet hors ligne ou non signé n'y est publié.
+
+---
+
+## Liens
+
+- **Site officiel:** https://annmax1983.com/
+- **Cette extension:** https://annmax1983.com/extensions/justfocus
+- **Confidentialité:** https://annmax1983.com/privacy
+- **Contact:** support@annmax1983.com
+- **☕ Soutenir le projet (Ko-fi):** https://ko-fi.com/annmax?ref=justfocus

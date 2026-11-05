@@ -15,7 +15,7 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 | Vorteil | Details |
 |---------|---------|
 | 🎯 **Einzelzweck** | Ablenkende Seiten blockieren. Das ist alles. Kein Ballast. |
-| 🔒 **Kein Tracking** | Keine Analytik, keine Konten. Die kostenlose Stufe ist komplett lokal — Daten verlassen nie dein Gerät |
+| 🔒 **Kein Tracking** | Keine Analytik, keine Konten. Die kostenlose Stufe arbeitet ohne JustFocus-Server — Einstellungen bleiben im Browser (Browsersync optional) |
 | ⚡ **Leichtgewichtig** | Winziger Fußabdruck, keine Frameworks, keine Abhängigkeiten. |
 | 🕐 **Temporär umgehen** | 5 Minuten nötig? Seite temporär umgehen ohne sie zu entfernen |
 | 🔄 **Globaler Schalter** | Gesamte Blockierung mit einem Schalter pausieren — Mittagspause, Wochenende |
@@ -50,7 +50,7 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 
 > Das Blockieren von YouTube Shorts ist für alle kostenlos, alle anderen Seiten erfordern eine Premium-Lizenz.
 
-- 🛒 Lizenz erhalten: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
+- 🛒 Lizenz erhalten: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Aktivieren: JustFocus Popup öffnen → **⚙ / 🔒**-Button klicken → Lizenzschlüssel eingeben.
 
 > Die Lizenzaktivierung ist **optional**. Die kostenlose Stufe funktioniert vollständig ohne sie — kein Konto, keine Anmeldung, kein Lizenzschlüssel erforderlich.
@@ -67,7 +67,7 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 | Android | **Chrome für Android** | ❌ Nicht möglich — Chrome für Android unterstützt keinerlei Erweiterungen |
 | Android | Microsoft Edge Canary | ⚠️ Experimentelle Erweiterungsunterstützung, kleiner Katalog, instabil |
 | Android | Chromium-Forks, die Chrome-Web-Store-Erweiterungen laden (z. B. Quetta, Yandex) | ⚠️ Inoffiziell; sollte funktionieren, aber ungetestet |
-| Android | Firefox für Android | ❌ Nicht verfügbar — JustFocus basiert auf Chromium MV3 (`declarativeNetRequest`) und ist nicht auf AMO veröffentlicht |
+| Android | Firefox für Android | ❌ Nicht verfügbar — die Firefox-Version richtet sich ausschließlich an Firefox Desktop (AMO-Listung); es gibt keinen Android-Build |
 | iOS | Alle | ❌ Nicht möglich — kein Browser unter iOS unterstützt Erweiterungen außerhalb von Safari |
 
 > **Kurz gesagt:** Dies ist eine Desktop-Browser-Erweiterung. Die Installation auf einem Smartphone wird nicht unterstützt — Chrome für Android akzeptiert keine Erweiterungen, und die Workarounds (Edge Canary, Chromium-Forks Dritter) sind experimentell. Das Blockieren funktioniert in der Desktop-Version von Chrome, Edge und Firefox.
@@ -93,7 +93,7 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 |---|---|
 | Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
-| Firefox-Add-ons (AMO) | 🔜 In Prüfung – Link folgt nach der Freigabe |
+| Firefox-Add-ons (AMO) | [Für Firefox installieren](https://addons.mozilla.org/firefox/addon/justfocus/) |
 
 > Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
@@ -125,7 +125,7 @@ Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. 
 Traust du dem Umgehungs-Button nicht? Setze ein Passwort:
 
 1. Popup öffnen → **⚙ / 🔒** → Abschnitt *Passwortschutz*, oder den 🔒-Button auf der Listen-Seite
-2. Passwort festlegen (min. 4 Zeichen) — es wird nur als gesalzener Hash **auf diesem Gerät** gespeichert, nie hochgeladen
+2. Passwort festlegen (min. 4 Zeichen) — gespeichert wird nur ein gesalzener Hash, nie das Passwort selbst. Wie deine übrigen Einstellungen liegt er im Chrome-Speicher und wird bei aktiver Browsersynchronisierung mit synchronisiert, aber nie an JustFocus-Server gesendet
 3. Fortan erfordern diese Aktionen das Passwort:
    - Blockierung ausschalten (globaler Schalter)
    - 5-Min-Umgehung auf der Blockierseite
@@ -141,11 +141,11 @@ Traust du dem Umgehungs-Button nicht? Setze ein Passwort:
 
 - **declarativeNetRequest** — Blockiert Seiten mit Hilfe von deklarativen Regeln. Liest keinen Seiteninhalt.
 - **storage** — Speichert deine Blockliste lokal. Keine Daten hochgeladen.
-- **Passwort (optional)** — Bei Aktivierung wird nur ein gesalzener Hash lokal gespeichert. Keine Synchronisation, kein Upload. Vergessene Passwörter sind nicht wiederherstellbar.
+- **Passwort (optional)** — Bei Aktivierung wird nur ein gesalzener Hash gespeichert, nie der Klartext. Wie deine übrigen Einstellungen liegt er im Chrome-Speicher und kann bei aktiver Browsersynchronisierung zwischen deinen Geräten abgeglichen werden; an JustFocus-Server wird er nie gesendet. Vergessene Passwörter sind nicht wiederherstellbar.
 - **alarms** — Verwaltet temporäre Umgehungs-Timer. Kein Hintergrund-Tracking.
 - **activeTab** — Greift nur auf den aktuellen Tab zu, wenn du mit der Erweiterung interagierst.
 - **Lizenz (optional)** — Nur bei Aktivierung einer kostenpflichtigen Lizenz: Lizenzschlüssel und eine zufällige Installationskennung + Browser-Metadaten werden an `api.annmax1983.com` gesendet, um die Lizenz zu aktivieren/validieren. Dies enthält nie deine Blockliste, deinen Browserverlauf oder persönliche Daten.
-- Verwendet `<all_urls>` Host-Berechtigung nur für declarativeNetRequest-Blockierregeln, und den Lizenzserver nur für kostenpflichtige Aktivierung. Kein Tracking. Keine Analytik. Daten von kostenlosen Nutzern verlassen nie das Gerät.
+- Verwendet `<all_urls>` Host-Berechtigung nur für declarativeNetRequest-Blockierregeln, und den Lizenzserver nur für kostenpflichtige Aktivierung. Kein Tracking. Keine Analytik. Kostenlose Funktionen kontaktieren keinen JustFocus-Server; Blockliste und Einstellungen liegen im Browser-Speicher und werden nur von der eigenen Browser-Kontosynchronisierung kopiert, wenn du sie aktivierst.
 
 **[📄 Vollständige Datenschutzerklärung](privacy-policy.html)**
 
@@ -162,3 +162,13 @@ Copyright © 2026 JustFocus. Alle Rechte vorbehalten.
 ---
 
 > **Hinweis:** Der offizielle Installationsweg ist der Chrome Web Store, Microsoft Edge Add-ons und Firefox-Add-ons (AMO). Dieses Repository enthält die Dokumentation und den Quellcode der Erweiterung als Referenz — es ist kein Vertriebsweg, und es werden hier keine Offline- oder unsignierten Pakete veröffentlicht.
+
+---
+
+## Links
+
+- **Offizielle Website:** https://annmax1983.com/
+- **Diese Erweiterung:** https://annmax1983.com/extensions/justfocus
+- **Datenschutz:** https://annmax1983.com/privacy
+- **Kontakt:** support@annmax1983.com
+- **☕ Projekt unterstützen (Ko-fi):** https://ko-fi.com/annmax?ref=justfocus

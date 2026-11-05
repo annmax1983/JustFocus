@@ -15,7 +15,7 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 | Ventaja | Detalle |
 |---------|--------|
 | 🎯 **Propósito único** | Bloquear sitios que distraen. Eso es todo. Sin peso muerto. |
-| 🔒 **Sin rastreo** | Sin analíticas, sin cuentas. El nivel gratuito es completamente local — los datos nunca salen de tu dispositivo |
+| 🔒 **Sin rastreo** | Sin analíticas, sin cuentas. El nivel gratuito no contacta servidores de JustFocus — los ajustes se quedan en el navegador (sincronización opcional) |
 | ⚡ **Ligera** | Huella mínima, sin frameworks, sin dependencias |
 | 🕐 **Desvío temporal** | ¿Necesitas 5 minutos? Accede temporalmente a un sitio bloqueado sin eliminarlo |
 | 🔄 **Interruptor global** | Pausa todo el bloqueo con un solo interruptor — hora de comer, fines de semana |
@@ -50,7 +50,7 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 
 > Bloquear YouTube Shorts es gratis para todos, los demás sitios requieren una licencia Premium.
 
-- 🛒 Obtener licencia: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
+- 🛒 Obtener licencia: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Activarla: abre el popup de JustFocus → haz clic en el botón **⚙ / 🔒** → introduce tu clave de licencia.
 
 > La activación de licencia es **opcional**. El nivel gratuito funciona completamente sin ella — sin cuenta, sin registro, sin clave de licencia.
@@ -67,7 +67,7 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 | Android | **Chrome para Android** | ❌ Imposible — Chrome para Android no admite extensiones en absoluto |
 | Android | Microsoft Edge Canary | ⚠️ Compatibilidad experimental, catálogo limitado, inestable |
 | Android | Forks de Chromium que cargan extensiones de Chrome Web Store (p. ej. Quetta, Yandex) | ⚠️ No oficial; debería funcionar, pero sin probar |
-| Android | Firefox para Android | ❌ No disponible — JustFocus está hecho con Chromium MV3 (`declarativeNetRequest`) y no se publica en AMO |
+| Android | Firefox para Android | ❌ No disponible — la versión de Firefox es solo para Firefox de escritorio (listado en AMO); no hay compilación para Android |
 | iOS | Cualquiera | ❌ Imposible — ningún navegador en iOS admite extensiones fuera de Safari |
 
 > **En resumen:** es una extensión de navegador de escritorio. Instalarla en el teléfono no está soportado — Chrome para Android no acepta extensiones y los rodeos (Edge Canary, forks de Chromium de terceros) son experimentales. El bloqueo funciona en Chrome, Edge y Firefox de escritorio.
@@ -93,7 +93,7 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 |---|---|
 | Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
-| Complementos de Firefox (AMO) | 🔜 En revisión: el enlace se añadirá al publicarse |
+| Complementos de Firefox (AMO) | [Instalar para Firefox](https://addons.mozilla.org/firefox/addon/justfocus/) |
 
 > Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
@@ -125,7 +125,7 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 ¿No te fías de tu propio botón de desvío? Establece una contraseña:
 
 1. Abre el popup → **⚙ / 🔒** → sección *Protección con contraseña*, o el botón 🔒 en la página de lista
-2. Establece una contraseña (mín. 4 caracteres) — se guarda **solo en este dispositivo** como hash con sal, nunca se sube
+2. Establece una contraseña (mín. 4 caracteres) — solo se guarda un hash con sal, nunca la contraseña. Como el resto de ajustes vive en el almacenamiento de Chrome y la sincronización del navegador puede copiarlo entre dispositivos, pero nunca se envía a servidores de JustFocus
 3. A partir de entonces, estas acciones requieren la contraseña:
    - Desactivar el bloqueo (interruptor global)
    - Desvío de 5 minutos en la página de bloqueo
@@ -141,11 +141,11 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 
 - **declarativeNetRequest** — Bloquea sitios usando reglas declarativas. No lee contenido de páginas.
 - **storage** — Guarda tu lista negra localmente. Sin subida de datos.
-- **Contraseña (opcional)** — Si la estableces, solo se guarda un hash con sal en el almacenamiento local del dispositivo. Sin sincronización ni subida. Las contraseñas olvidadas no se pueden recuperar.
+- **Contraseña (opcional)** — Si la estableces, solo se guarda un hash con sal, nunca en texto plano. Como el resto de ajustes está en el almacenamiento de Chrome, así que la sincronización del navegador puede copiarla entre tus dispositivos; nunca se envía a servidores de JustFocus. Las contraseñas olvidadas no se pueden recuperar.
 - **alarms** — Gestiona temporizadores de desvío temporal. Sin rastreo en segundo plano.
 - **activeTab** — Solo accede a la pestaña actual cuando interactúas con la extensión.
 - **Licencia (opcional)** — Solo si activas una licencia de pago: la clave de licencia y un identificador de instalación aleatorio + metadatos del navegador se envían a `api.annmax1983.com` para activar/validar la licencia. Esto nunca incluye tu lista negra, historial de navegación ni datos personales.
-- Usa el permiso de host `<all_urls>` solo para las reglas de bloqueo de declarativeNetRequest, y el servidor de licencias solo para la activación de pago. Sin rastreo. Sin analíticas. Los datos de usuarios gratuitos nunca salen del dispositivo.
+- Usa el permiso de host `<all_urls>` solo para las reglas de bloqueo de declarativeNetRequest, y el servidor de licencias solo para la activación de pago. Sin rastreo. Sin analíticas. Las funciones gratuitas no contactan ningún servidor de JustFocus: la lista y los ajustes están en el almacenamiento del navegador y solo los copia la sincronización de tu cuenta de navegador si la activas.
 
 **[📄 Política de privacidad completa](privacy-policy.html)**
 
@@ -158,3 +158,13 @@ Esta extensión solo bloquea localmente los sitios web especificados por el usua
 ## Licencia
 
 Copyright © 2026 JustFocus. Todos los derechos reservados.
+
+---
+
+## Enlaces
+
+- **Sitio oficial:** https://annmax1983.com/
+- **Esta extensión:** https://annmax1983.com/extensions/justfocus
+- **Privacidad:** https://annmax1983.com/privacy
+- **Contacto:** support@annmax1983.com
+- **☕ Apoya el proyecto (Ko-fi):** https://ko-fi.com/annmax?ref=justfocus

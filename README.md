@@ -72,7 +72,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 
 > YouTube Shorts blocking is free for everyone — it is the single most requested case. Everything else under Surgical Blocking needs a Premium license.
 
-- 🛒 Get a license: `https://www.annmax1983.com/checkout.html?plugin=justfocus`
+- 🛒 Get a license: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Activate it: open the JustFocus popup → click the **⚙ / 🔒** button → enter your license key.
 
 > License activation is **optional**. The free tier works fully without it — no account, no sign-up, no license key required.
@@ -103,7 +103,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/iocnhglbdkdonajhkipknhgdnbombcic) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/eigeengnoahojmfcnkkjnipbdnpngaod) |
-| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
+| Firefox Add-ons (AMO) | [Install for Firefox](https://addons.mozilla.org/firefox/addon/justfocus/) |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -135,7 +135,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 Don't trust yourself with the bypass button? Set a password:
 
 1. Open the popup → click **⚙ / 🔒** → *Password Protection* section, or the 🔒 button on the list page
-2. Set a password (min. 4 characters) — it is stored **only on this device** as a salted hash, never uploaded
+2. Set a password (min. 4 characters) — only a salted hash is stored, never the password itself. Like your other settings it lives in Chrome storage, so browser sync can copy it between devices; it is never sent to JustFocus servers
 3. From then on, these actions require the password:
    - Turning blocking off (global switch)
    - 5-minute bypass on the block page
@@ -151,11 +151,11 @@ Don't trust yourself with the bypass button? Set a password:
 
 - **declarativeNetRequest** — Blocks sites using declarative rules. Does not read page content.
 - **storage** — Saves your blocklist locally. No data uploaded.
-- **Password (optional)** — If you set a password, only a salted hash is stored in local device storage. It never syncs and is never uploaded. Forgotten passwords cannot be recovered.
+- **Password (optional)** — If you set a password, only a salted hash is stored — never the plaintext. Like your other settings it lives in Chrome storage, so browser sync may copy it between your devices; it is never sent to JustFocus servers. Forgotten passwords cannot be recovered.
 - **alarms** — Manages temp bypass timers. No background tracking.
 - **activeTab** — Only accesses the current tab when you interact with the extension.
 - **License (optional)** — Only if you activate a paid license: a random install identifier + browser metadata is sent to `api.annmax1983.com` to activate/validate the license. This never includes your blocklist, browsing history, or personal data.
-- Uses `<all_urls>` host permission only for declarativeNetRequest blocking rules, and the license server only for paid activation. No tracking. No analytics. Free users' data never leaves the device.
+- Uses `<all_urls>` host permission only for declarativeNetRequest blocking rules, and the license server only for paid activation. No tracking. No analytics. Free features contact no JustFocus server: your blocklist and settings stay in browser storage and are only copied by your browser's own account sync if you enable it.
 - **Firefox** — the same permissions are declared (`declarativeNetRequest`, `storage`, `alarms`, `activeTab`, `<all_urls>`). Firefox lists them in *Add-ons Manager → Permissions*, where you can review them and revoke optional ones at any time. Blocking still runs on-device via `declarativeNetRequest`; no page content is read.
 
 **[📄 Full Privacy Policy](privacy-policy.html)**
@@ -173,3 +173,13 @@ Copyright © 2026 JustFocus. All rights reserved.
 ---
 
 > **Note:** the official installation channels are the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (AMO). This repository carries the extension's own documentation and source for reference — it is not a distribution channel and no offline/unsigned package is published here.
+
+---
+
+## Links
+
+- **Official website:** https://annmax1983.com/
+- **This extension:** https://annmax1983.com/extensions/justfocus
+- **Privacy policy:** https://annmax1983.com/privacy
+- **Contact:** support@annmax1983.com
+- **☕ Support this project (Ko-fi):** https://ko-fi.com/annmax?ref=justfocus
