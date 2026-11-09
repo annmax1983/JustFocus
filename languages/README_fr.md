@@ -155,13 +155,19 @@ Vous ne faites pas confiance à votre propre bouton de contournement ? Définiss
 
 Cette extension bloque uniquement les sites web spécifiés par l'utilisateur en local pour l'aider à maintenir sa concentration pendant le travail ou les études. L'extension ne modifie, ne copie ni ne redistribue aucun contenu de site web. Tous les droits de contenu des sites appartiennent à leurs éditeurs originaux.
 
+## Avis sur le code source
+
+> ⚠️ **Ce dépôt sert uniquement à la présentation du projet — le code source complet n'y est pas publié.** Il ne contient que la documentation d'utilisation, les notes de version et les informations d'assistance de l'extension.
+
+> 📥 **Téléchargement et installation uniquement depuis les boutiques officielles :** Chrome Web Store · Microsoft Edge Add-ons · Modules complémentaires Firefox (AMO). Aucun installateur hors ligne n'est distribué ici.
+
+---
+
 ## Licence
 
 Copyright © 2026 JustFocus. Tous droits réservés.
 
----
-
-> **Note :** le canal d'installation officiel est le Chrome Web Store, Microsoft Edge Add-ons et Firefox Add-ons (AMO). Ce dépôt contient la documentation et le code source de l'extension à titre de référence — ce n'est pas un canal de distribution, et aucun paquet hors ligne ou non signé n'y est publié.
+Ce logiciel est propriétaire et à code fermé. Sans autorisation écrite préalable de l'auteur, la décompilation, l'ingénierie inverse, le crackage, la modification, le reconditionnement, la redistribution ou la revente du logiciel (en tout ou en partie) sont strictement interdites.
 
 ---
 

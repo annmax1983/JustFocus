@@ -155,13 +155,19 @@ Traust du dem Umgehungs-Button nicht? Setze ein Passwort:
 
 Diese Erweiterung blockiert nur benutzerdefinierte Websites lokal, um Nutzern zu helfen, während der Arbeit oder beim Lernen konzentriert zu bleiben. Die Erweiterung verändert, kopiert oder verbreitet keinen Website-Inhalt. Alle Website-Inhaltsrechte gehören deren jeweiligen Herausgebern.
 
+## Hinweis zum Quellcode
+
+> ⚠️ **Dieses Repository dient ausschließlich der Projektpräsentation — der vollständige Quellcode wird hier nicht veröffentlicht.** Es enthält nur die Nutzungsdokumentation, die Release-Notizen und Support-Informationen zur Erweiterung.
+
+> 📥 **Installation ausschließlich über die offiziellen Browser-Stores:** Chrome Web Store · Microsoft Edge Add-ons · Firefox-Add-ons (AMO). Von hier werden keine Offline-Installer verteilt.
+
+---
+
 ## Lizenz
 
 Copyright © 2026 JustFocus. Alle Rechte vorbehalten.
 
----
-
-> **Hinweis:** Der offizielle Installationsweg ist der Chrome Web Store, Microsoft Edge Add-ons und Firefox-Add-ons (AMO). Dieses Repository enthält die Dokumentation und den Quellcode der Erweiterung als Referenz — es ist kein Vertriebsweg, und es werden hier keine Offline- oder unsignierten Pakete veröffentlicht.
+Diese Software ist proprietär und quellgeschlossen. Ohne vorherige schriftliche Genehmigung des Autors ist das Dekompilieren, Reverse-Engineering, Knacken, Verändern, Neuverpacken, Weiterverbreiten oder Weiterverkaufen der Software (ganz oder teilweise) streng untersagt.
 
 ---
 

@@ -166,13 +166,19 @@ Don't trust yourself with the bypass button? Set a password:
 
 This extension only blocks user-specified websites locally to help users maintain focus during work or study. The extension does not modify, copy, or redistribute any website content. All website content rights belong to their original publishers.
 
+## Source Code Notice
+
+> ⚠️ **This repository is for project showcase only — the full source code is not published here.** It contains the user documentation, release notes and support information for the extension.
+
+> 📥 **Download and install only from the official browser stores:** Chrome Web Store · Microsoft Edge Add-ons · Firefox Add-ons (AMO). No offline installation package is distributed from this repository.
+
+---
+
 ## License
 
 Copyright © 2026 JustFocus. All rights reserved.
 
----
-
-> **Note:** the official installation channels are the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (AMO). This repository carries the extension's own documentation and source for reference — it is not a distribution channel and no offline/unsigned package is published here.
+This software is proprietary and closed-source. Without prior written authorization from the author, decompiling, reverse-engineering, cracking, modifying, repackaging, redistributing or reselling the program (in whole or in part) is strictly prohibited.
 
 ---
 

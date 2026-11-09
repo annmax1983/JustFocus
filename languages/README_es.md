@@ -155,9 +155,19 @@ Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. *
 
 Esta extensión solo bloquea localmente los sitios web especificados por el usuario para ayudarle a mantener la concentración durante el trabajo o el estudio. La extensión no modifica, copia ni redistribuye el contenido de ningún sitio web. Todos los derechos de contenido de los sitios web pertenecen a sus editores originales.
 
+## Aviso sobre el código fuente
+
+> ⚠️ **Este repositorio es solo para presentar el proyecto: el código fuente completo no se publica aquí.** Solo contiene la documentación de uso, las notas de versión y la información de soporte de la extensión.
+
+> 📥 **Descárgala e instálala únicamente desde las tiendas oficiales de navegadores:** Chrome Web Store · Microsoft Edge Add-ons · Complementos de Firefox (AMO). Desde aquí no se distribuye ningún instalador sin conexión.
+
+---
+
 ## Licencia
 
 Copyright © 2026 JustFocus. Todos los derechos reservados.
+
+Este software es propietario y de código cerrado. Sin autorización previa por escrito del autor, queda estrictamente prohibido descompilar, aplicar ingeniería inversa, crackear, modificar, reempaquetar, redistribuir o revender el programa (total o parcialmente).
 
 ---
 
