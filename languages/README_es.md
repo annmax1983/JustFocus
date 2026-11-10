@@ -35,20 +35,20 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 | 🌐 **Idioma automático** | Detecta el idioma del navegador, por defecto inglés |
 | 📋 **Página de lista completa** | Gestiona cada sitio bloqueado, edita duraciones, exporta e importa |
 | 🔑 **Protección con contraseña** | Contraseña local opcional: desbloquear, eliminar sitios y desactivar el bloqueo la requieren. Las contraseñas olvidadas no se pueden recuperar |
-| ⭐ **Premium** | Bloqueo quirúrgico — oculta solo Shorts, Reels y Para ti; el resto del sitio sigue funcionando (licencia VKT Premium de pago único) |
+| ⭐ **Pro** | Bloqueo quirúrgico — oculta solo Shorts, Reels y Para ti; el resto del sitio sigue funcionando (licencia VKT Pro de pago único) |
 
 ---
 
-## Gratis vs Premium
+## Gratis vs Pro
 
 | Plan | Sitios bloqueados | Exportar / Importar | Bloqueo quirúrgico |
 |------|---------------|-----------------|--------------------|
 | **Gratis** | Ilimitados | Incluido | Solo YouTube Shorts |
-| **⭐ Premium** | Ilimitados | Incluido | Los 12 sitios compatibles |
+| **⭐ Pro** | Ilimitados | Incluido | Los 12 sitios compatibles |
 
-Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. **Premium añade el bloqueo quirúrgico** — oculta solo las partes adictivas (Shorts, Reels, Para ti) y el resto del sitio sigue funcionando — en YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK y Xiaohongshu.
+Bloquear sitios que distraen es **totalmente gratis y sin límite de sitios**. **Pro añade el bloqueo quirúrgico** — oculta solo las partes adictivas (Shorts, Reels, Para ti) y el resto del sitio sigue funcionando — en YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK y Xiaohongshu.
 
-> Bloquear YouTube Shorts es gratis para todos, los demás sitios requieren una licencia Premium.
+> Bloquear YouTube Shorts es gratis para todos, los demás sitios requieren una licencia Pro.
 
 - 🛒 Obtener licencia: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Activarla: abre el popup de JustFocus → haz clic en el botón **⚙ / 🔒** → introduce tu clave de licencia.

@@ -19,20 +19,20 @@
 | 🌐 **自动语言** | 检测浏览器语言，默认英文 |
 | 📋 **完整列表页** | 管理所有屏蔽站点、修改时长、导出与导入 |
 | 🔑 **密码保护** | 可选的本地密码：解除屏蔽、移除站点、关闭总开关都需要输入密码。忘记密码无法找回 |
-| ⭐ **高级版** | 外科式屏蔽——只隐藏 Shorts、Reels 与推荐流，站点其余功能照常使用（一次性 VKT 高级版许可证） |
+| ⭐ **Pro 版** | 外科式屏蔽——只隐藏 Shorts、Reels 与推荐流，站点其余功能照常使用（一次性 VKT Pro 版许可证） |
 
 ---
 
-## 免费 vs 高级版
+## 免费 vs Pro 版
 
 | 版本 | 屏蔽站点 | 导出 / 导入 | 外科式屏蔽 |
 |------|---------|------------|-----------|
 | **免费版** | 不限数量 | 支持 | 仅 YouTube Shorts |
-| **⭐ 高级版** | 不限数量 | 支持 | 全部 12 个支持站点 |
+| **⭐ Pro 版** | 不限数量 | 支持 | 全部 12 个支持站点 |
 
-屏蔽网站本身**完全免费、站点数量不限**。**高级版解锁「外科式屏蔽」**——只隐藏最上瘾的那部分（Shorts、Reels、推荐流），站点其余功能照常使用，覆盖 YouTube、Instagram、TikTok、Facebook、Reddit、X、Pinterest、Threads、LinkedIn、Snapchat、VK、小红书。
+屏蔽网站本身**完全免费、站点数量不限**。**Pro 版解锁「外科式屏蔽」**——只隐藏最上瘾的那部分（Shorts、Reels、推荐流），站点其余功能照常使用，覆盖 YouTube、Instagram、TikTok、Facebook、Reddit、X、Pinterest、Threads、LinkedIn、Snapchat、VK、小红书。
 
-> YouTube Shorts 的屏蔽对所有用户免费，其余站点需要高级版许可证。
+> YouTube Shorts 的屏蔽对所有用户免费，其余站点需要Pro 版许可证。
 
 - 🛒 获取许可证：`https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ 激活：打开 JustFocus 弹窗 → 点击 **⚙ / 🔒** 按钮 → 输入许可证密钥。

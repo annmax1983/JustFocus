@@ -35,20 +35,20 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 | 🌐 **Auto-Sprache** | Erkennt Browsersprache, Standard ist Englisch |
 | 📋 **Vollständige Listen-Seite** | Jede blockierte Seite verwalten, Dauern bearbeiten, Exportieren & Importieren |
 | 🔑 **Passwortschutz** | Optionales lokales Passwort: Entsperren, Seiten entfernen und Blockierung deaktivieren erfordern es. Vergessene Passwörter sind nicht wiederherstellbar |
-| ⭐ **Premium** | Chirurgisches Blockieren — nur Shorts, Reels und For-You-Feeds ausblenden, der Rest der Seite bleibt nutzbar (einmalige VKT Premium-Lizenz) |
+| ⭐ **Pro** | Chirurgisches Blockieren — nur Shorts, Reels und For-You-Feeds ausblenden, der Rest der Seite bleibt nutzbar (einmalige VKT Pro-Lizenz) |
 
 ---
 
-## Kostenlos vs. Premium
+## Kostenlos vs. Pro
 
 | Plan | Blockierte Seiten | Export / Import | Chirurgisches Blockieren |
 |------|-------------------|-----------------|--------------------------|
 | **Kostenlos** | Unbegrenzt | Inklusive | Nur YouTube Shorts |
-| **⭐ Premium** | Unbegrenzt | Inklusive | Alle 12 unterstützten Seiten |
+| **⭐ Pro** | Unbegrenzt | Inklusive | Alle 12 unterstützten Seiten |
 
-Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. **Premium schaltet chirurgisches Blockieren frei** — nur die süchtig machenden Teile ausblenden (Shorts, Reels, For-You-Feeds), der Rest der Seite bleibt nutzbar — auf YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK und Xiaohongshu.
+Das Blockieren ablenkender Seiten ist **komplett kostenlos, ohne Seitenlimit**. **Pro schaltet chirurgisches Blockieren frei** — nur die süchtig machenden Teile ausblenden (Shorts, Reels, For-You-Feeds), der Rest der Seite bleibt nutzbar — auf YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK und Xiaohongshu.
 
-> Das Blockieren von YouTube Shorts ist für alle kostenlos, alle anderen Seiten erfordern eine Premium-Lizenz.
+> Das Blockieren von YouTube Shorts ist für alle kostenlos, alle anderen Seiten erfordern eine Pro-Lizenz.
 
 - 🛒 Lizenz erhalten: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Aktivieren: JustFocus Popup öffnen → **⚙ / 🔒**-Button klicken → Lizenzschlüssel eingeben.

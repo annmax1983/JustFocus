@@ -36,13 +36,13 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | 🌐 **Auto Language** | Detects browser language, defaults to English |
 | 📋 **Full List Page** | Manage every blocked site, edit durations, export & import |
 | 🔑 **Password Protection** | Optional local password: unblocking, removing sites, and disabling blocking require it. Forgotten passwords cannot be recovered |
-| ⭐ **Premium** | Surgical Blocking — hide Shorts / Reels / For You feeds while the rest of the site keeps working |
+| ⭐ **Pro** | Surgical Blocking — hide Shorts / Reels / For You feeds while the rest of the site keeps working |
 
 ---
 
-## Free vs Premium
+## Free vs Pro
 
-| Capability | Free | Premium |
+| Capability | Free | Pro |
 |------------|------|---------|
 | Blocked sites (whole-site blocking) | **Unlimited** | Unlimited |
 | Timed blocks (30 min → 24 h → permanent) | ✅ | ✅ |
@@ -53,24 +53,24 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | Export / import blocklist | ✅ | ✅ |
 | Surgical Blocking — entry point | YouTube Shorts | All 12 sites |
 
-**Everything except Surgical Blocking is free, with no site limit, no account and no sign-up.** Premium unlocks **Surgical Blocking** on the remaining sites.
+**Everything except Surgical Blocking is free, with no site limit, no account and no sign-up.** Pro unlocks **Surgical Blocking** on the remaining sites.
 
-| Site | What gets hidden | Free / Premium |
+| Site | What gets hidden | Free / Pro |
 |------|------------------|----------------|
 | YouTube | Shorts shelf, Shorts nav, `/shorts/` URLs | **Free** |
-| Instagram | Reels tab and Reels feed | Premium |
-| TikTok | For You feed | Premium |
-| Facebook | Reels | Premium |
-| Reddit | r/popular | Premium |
-| Snapchat | Spotlight | Premium |
-| VK | Clips | Premium |
-| Pinterest | Home feed pins | Premium |
-| Threads | For You feed (keeps Following) | Premium |
-| LinkedIn | Home feed posts | Premium |
-| X / Twitter | For You timeline (keeps Following) | Premium |
-| Xiaohongshu | Explore feed | Premium |
+| Instagram | Reels tab and Reels feed | Pro |
+| TikTok | For You feed | Pro |
+| Facebook | Reels | Pro |
+| Reddit | r/popular | Pro |
+| Snapchat | Spotlight | Pro |
+| VK | Clips | Pro |
+| Pinterest | Home feed pins | Pro |
+| Threads | For You feed (keeps Following) | Pro |
+| LinkedIn | Home feed posts | Pro |
+| X / Twitter | For You timeline (keeps Following) | Pro |
+| Xiaohongshu | Explore feed | Pro |
 
-> YouTube Shorts blocking is free for everyone — it is the single most requested case. Everything else under Surgical Blocking needs a Premium license.
+> YouTube Shorts blocking is free for everyone — it is the single most requested case. Everything else under Surgical Blocking needs a Pro license.
 
 - 🛒 Get a license: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Activate it: open the JustFocus popup → click the **⚙ / 🔒** button → enter your license key.

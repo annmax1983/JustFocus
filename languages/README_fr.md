@@ -35,20 +35,20 @@ La plupart des bloqueurs de sites sont gonflés de publicités, d'inscriptions o
 | 🌐 **Langue automatique** | Détecte la langue du navigateur, anglais par défaut |
 | 📋 **Page de liste complète** | Gérez chaque site bloqué, modifiez les durées, exportez et importez |
 | 🔑 **Protection par mot de passe** | Mot de passe local optionnel : débloquer, supprimer des sites et désactiver le blocage le nécessitent. Un mot de passe oublié est irrécupérable |
-| ⭐ **Premium** | Blocage chirurgical — masquez uniquement Shorts, Reels et Pour vous, le reste du site reste utilisable (licence VKT Premium unique) |
+| ⭐ **Pro** | Blocage chirurgical — masquez uniquement Shorts, Reels et Pour vous, le reste du site reste utilisable (licence VKT Pro unique) |
 
 ---
 
-## Gratuit vs Premium
+## Gratuit vs Pro
 
 | Plan | Sites bloqués | Export / Import | Blocage chirurgical |
 |------|---------------|-----------------|---------------------|
 | **Gratuit** | Illimité | Inclus | YouTube Shorts uniquement |
-| **⭐ Premium** | Illimité | Inclus | Les 12 sites pris en charge |
+| **⭐ Pro** | Illimité | Inclus | Les 12 sites pris en charge |
 
-Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**. **Premium ajoute le blocage chirurgical** — masquez uniquement les parties addictives (Shorts, Reels, Pour vous), le reste du site reste utilisable — sur YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK et Xiaohongshu.
+Bloquer les sites distrayants est **entièrement gratuit, sans limite de sites**. **Pro ajoute le blocage chirurgical** — masquez uniquement les parties addictives (Shorts, Reels, Pour vous), le reste du site reste utilisable — sur YouTube, Instagram, TikTok, Facebook, Reddit, X, Pinterest, Threads, LinkedIn, Snapchat, VK et Xiaohongshu.
 
-> Le blocage de YouTube Shorts est gratuit pour tous, les autres sites nécessitent une licence Premium.
+> Le blocage de YouTube Shorts est gratuit pour tous, les autres sites nécessitent une licence Pro.
 
 - 🛒 Obtenir une licence : `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ L'activer : ouvrez le popup JustFocus → cliquez sur le bouton **⚙ / 🔒** → saisissez votre clé de licence.
