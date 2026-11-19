@@ -29,7 +29,7 @@ La plupart des bloqueurs de sites sont gonflés de publicités, d'inscriptions o
 |---------|-------------|
 | 🚫 **Liste de blocage personnalisée** | Ajoutez n'importe quel domaine — tous ses sous-domaines sont bloqués automatiquement |
 | 🔄 **Activation/Désactivation globale** | Activez ou désactivez tout le blocage instantanément |
-| ⏱️ **Contournement 5 min** | Accédez temporairement à un site bloqué pendant 5 minutes, rebloquage automatique |
+| ⏱️ **Contournement 5 min** | Accédez temporairement à un site bloqué pendant 5 minutes, rebloquage automatique (gratuit : deux par jour) |
 | 💾 **Synchronisation** | La liste de blocage se synchronise sur vos appareils (Chrome, Edge ou Firefox) |
 | 🛡️ **Natif MV3** | Utilise `declarativeNetRequest` — aucune API obsolète, compatible avec la boutique |
 | 🌐 **Langue automatique** | Détecte la langue du navigateur, anglais par défaut |

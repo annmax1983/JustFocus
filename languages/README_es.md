@@ -29,7 +29,7 @@ La mayoría de bloqueadores de sitios están llenos de anuncios, registros oblig
 |---------|-------------|
 | 🚫 **Lista negra personalizada** | Añade cualquier dominio — todos sus subdominios se bloquean automáticamente |
 | 🔄 **Interruptor global ON/OFF** | Activa o desactiva todo el bloqueo al instante |
-| ⏱️ **Desvío de 5 minutos** | Accede temporalmente a un sitio bloqueado durante 5 minutos, se vuelve a bloquear automáticamente |
+| ⏱️ **Desvío de 5 minutos** | Accede temporalmente a un sitio bloqueado durante 5 minutos, se vuelve a bloquear automáticamente (gratis: dos al día) |
 | 💾 **Almacenamiento sincronizado** | La lista negra se sincroniza entre tus dispositivos (Chrome, Edge o Firefox) |
 | 🛡️ **Nativo MV3** | Usa declarativeNetRequest — sin APIs obsoletas, compatible con la tienda |
 | 🌐 **Idioma automático** | Detecta el idioma del navegador, por defecto inglés |

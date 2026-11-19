@@ -30,13 +30,13 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 |---------|-------------|
 | 🚫 **Custom Blocklist** | Add any domain — all its subdomains are blocked automatically |
 | 🔄 **Global On/Off** | Toggle all blocking on or off instantly |
-| ⏱️ **5-Min Bypass** | Temporarily access a blocked site for 5 minutes, auto-reblocks |
+| ⏱️ **5-Min Bypass** | Temporarily access a blocked site for 5 minutes, auto-reblocks — twice a day on the free plan |
 | 💾 **Sync Storage** | Blocklist syncs across devices signed in to the same browser account — Google / Microsoft account on Chrome and Edge, Firefox Sync on Firefox |
 | 🛡️ **MV3 Native** | Uses declarativeNetRequest — no legacy APIs, store-friendly |
 | 🌐 **Auto Language** | Detects browser language, defaults to English |
 | 📋 **Full List Page** | Manage every blocked site, edit durations, export & import |
 | 🔑 **Password Protection** | Optional local password: unblocking, removing sites, and disabling blocking require it. Forgotten passwords cannot be recovered |
-| ⭐ **Pro** | Surgical Blocking — hide Shorts / Reels / For You feeds while the rest of the site keeps working |
+| ⭐ **Pro** | Surgical Blocking on 11 more sites, scheduled blocks, a daily allowance per site, unlimited bypasses |
 
 ---
 
@@ -47,13 +47,15 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | Blocked sites (whole-site blocking) | **Unlimited** | Unlimited |
 | Timed blocks (30 min → 24 h → permanent) | ✅ | ✅ |
 | Global on/off toggle | ✅ | ✅ |
-| 5-minute bypass | ✅ | ✅ |
+| 5-minute bypass | **2 per day** | Unlimited |
+| Scheduled blocks (hours × weekdays) | — | ✅ |
+| Daily allowance per site | — | ✅ |
 | Optional password lock | ✅ | ✅ |
 | Sync across signed-in devices | ✅ | ✅ |
 | Export / import blocklist | ✅ | ✅ |
 | Surgical Blocking — entry point | YouTube Shorts | All 12 sites |
 
-**Everything except Surgical Blocking is free, with no site limit, no account and no sign-up.** Pro unlocks **Surgical Blocking** on the remaining sites.
+**Whole-site blocking is free and unlimited — every duration, sync, password lock, export/import, and two 5-minute bypasses a day.** Pro adds the time controls (schedules, per-site daily allowances, unlimited bypasses) and the rest of Surgical Blocking.
 
 | Site | What gets hidden | Free / Pro |
 |------|------------------|----------------|
@@ -70,7 +72,7 @@ Most site blockers are bloated with ads, forced sign-ups, and invasive tracking.
 | X / Twitter | For You timeline (keeps Following) | Pro |
 | Xiaohongshu | Explore feed | Pro |
 
-> YouTube Shorts blocking is free for everyone — it is the single most requested case. Everything else under Surgical Blocking needs a Pro license.
+> YouTube Shorts blocking is free for everyone — it is the single most requested case. The other eleven surgical sites, the schedules and the daily allowances need a Pro license.
 
 - 🛒 Get a license: `https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ Activate it: open the JustFocus popup → click the **⚙ / 🔒** button → enter your license key.

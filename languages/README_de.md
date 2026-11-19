@@ -29,7 +29,7 @@ Die meisten Seiten-Blocker sind voller Werbung, erzwungener Anmeldungen und inva
 |----------|--------------|
 | 🚫 **Eigene Blockliste** | Beliebige Domain hinzufügen — alle ihre Subdomains werden automatisch blockiert |
 | 🔄 **Global EIN/AUS** | Gesamte Blockierung sofort ein- oder ausschalten |
-| ⏱️ **5-Min Umgehung** | Auf eine blockierte Seite für 5 Minuten zugreifen, wird automatisch wieder blockiert |
+| ⏱️ **5-Min Umgehung** | Auf eine blockierte Seite für 5 Minuten zugreifen, wird automatisch wieder blockiert (kostenlos zweimal pro Tag) |
 | 💾 **Sync-Speicher** | Blockliste wird über deine Browserkonten (Chrome / Edge / Firefox) hinweg synchronisiert |
 | 🛡️ **MV3 nativ** | Verwendet declarativeNetRequest — keine Legacy-APIs, Store-freundlich |
 | 🌐 **Auto-Sprache** | Erkennt Browsersprache, Standard ist Englisch |

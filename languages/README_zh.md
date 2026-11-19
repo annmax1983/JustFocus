@@ -25,14 +25,14 @@
 
 ## 免费 vs Pro 版
 
-| 版本 | 屏蔽站点 | 导出 / 导入 | 外科式屏蔽 |
-|------|---------|------------|-----------|
-| **免费版** | 不限数量 | 支持 | 仅 YouTube Shorts |
-| **⭐ Pro 版** | 不限数量 | 支持 | 全部 12 个支持站点 |
+| 版本 | 屏蔽站点 | 每日放行 | 外科式屏蔽 | 定时段 / 每日额度 |
+|------|---------|---------|-----------|------------------|
+| **免费版** | 不限数量 | 2 次 5 分钟 | 仅 YouTube Shorts | — |
+| **⭐ Pro 版** | 不限数量 | 不限次 | 全部 12 个支持站点 | 支持 |
 
-屏蔽网站本身**完全免费、站点数量不限**。**Pro 版解锁「外科式屏蔽」**——只隐藏最上瘾的那部分（Shorts、Reels、推荐流），站点其余功能照常使用，覆盖 YouTube、Instagram、TikTok、Facebook、Reddit、X、Pinterest、Threads、LinkedIn、Snapchat、VK、小红书。
+屏蔽网站本身**完全免费、站点数量不限**，导出导入与密码锁也都免费。**Pro 版**补上两件事：一是**外科式屏蔽**——只隐藏最上瘾的那部分（Shorts、Reels、推荐流），覆盖 YouTube、Instagram、TikTok、Facebook、Reddit、X、Pinterest、Threads、LinkedIn、Snapchat、VK、小红书；二是**时间控制**——定时段屏蔽（例如工作日 09:00–18:00 自动生效）与每站每日额度（例如 Instagram 每天 30 分钟，用完自动屏蔽），并且放行不限次。
 
-> YouTube Shorts 的屏蔽对所有用户免费，其余站点需要Pro 版许可证。
+> YouTube Shorts 的屏蔽对所有用户免费。其余 11 个站点、定时段与每日额度需要 Pro 版许可证。
 
 - 🛒 获取许可证：`https://annmax1983.com/checkout?plugin=justfocus`
 - ⚙ 激活：打开 JustFocus 弹窗 → 点击 **⚙ / 🔒** 按钮 → 输入许可证密钥。
